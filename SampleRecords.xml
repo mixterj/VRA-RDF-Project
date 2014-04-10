@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:schema="http://purl.org/vra/"
+>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85040989">
+    <rdf:type rdf:resource="http://purl.org/vra/Thing"/>
+    <schema:name>Education</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/7009061">
+    <schema:name>Courbevoie</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7009061&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7009061</schema:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n80030746">
+    <rdf:type rdf:resource="http://purl.org/vra/Person"/>
+    <schema:name>Julius II, Pope, 1443-1513</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb78c64291fa6431ca0312668678f5b0c">
+    <schema:name>Creation</schema:name>
+    <schema:endDate>1500</schema:endDate>
+    <rdf:type rdf:resource="http://purl.org/vra/Event"/>
+    <schema:startDate>1498</schema:startDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0d605963bab241509f4852ccbd290c40">
+    <schema:value>4</schema:value>
+    <schema:unitCode>INH</schema:unitCode>
+    <rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N941937f32ba84a8c8236936a3bef8f71">
+    <rdf:type rdf:resource="http://purl.org/vra/Agent"/>
+    <schema:name>G. [Gaston] Massiot et Compagnie</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Organization"/>
+    <schema:creativeActivity rdf:nodeID="Ne5f9eccf4494404392a45661608495b1"/>
+    <schema:hasCulture rdf:resource="http://purl.org/getty/vocab/ulan/French"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb548a362f1204f23800f896659e359c8">
+    <rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue"/>
+    <schema:unitCode>INH</schema:unitCode>
+    <schema:value>68.5</schema:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n79022118">
+    <rdf:type rdf:resource="http://purl.org/vra/Person"/>
+    <schema:name>Peter, the Apostle, Saint</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/JPG%7C500018431#skos:Concept">
+    <schema:birthDate>1500</schema:birthDate>
+    <schema:hasCulture rdf:resource="http://purl.org/getty/vocab/ulan/Italian"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Agent"/>
+    <schema:name>Ligorio, Pirro</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Person"/>
+    <schema:deathDate>1583</schema:deathDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/1000080">
+    <schema:name>Italy</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Country"/>
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000080&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000080</schema:url>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na689aa518e404b4a9598b4871736d5b0">
+    <schema:description></schema:description>
+    <rdf:type rdf:resource="http://purl.org/vra/CivicStructure"/>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7001168"/>
+    <schema:containedIn rdf:nodeID="Nd1c943543029442583e9a437c9f1bf62"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:name>Saint Peter's (Rome (Vatican City), Santa Sede (Holy See), Italy)</schema:name>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000080"/>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/7002883">
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7002883&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7002883</schema:url>
+    <schema:name>Île-de-France</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#3">
+    <schema:partOf rdf:resource="#2"/>
+    <schema:creator rdf:resource="http://viaf.org/viaf/sourceID/JPG%7C500010654#skos:Concept"/>
+    <schema:material rdf:nodeID="Nd5095397ac5d46a498317ccd321c40f2"/>
+    <schema:about rdf:resource="http://id.loc.gov/authorities/subjects/n79084784"/>
+    <rdf:type rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <schema:hasTechnique rdf:resource="http://vocab.getty.edu/aat/300053149"/>
+    <schema:wasCreated rdf:nodeID="Nb78c64291fa6431ca0312668678f5b0c"/>
+    <schema:description>Commissioned in 1497 by the French Cardinal Jean Villiers de La Grolais (ca. 1430-1499) for his own tomb, it was begun the following year and was finished by 1500. It signals the beginning of Michelangelo's maturity as a sculptor.</schema:description>
+    <schema:width rdf:nodeID="Ndd744bf62ce141e2b543d02d5f7c17c2"/>
+    <schema:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300021140"/>
+    <schema:about rdf:resource="http://id.loc.gov/authorities/subjects/n81018544"/>
+    <rdf:type rdf:resource="http://vocab.getty.edu/aat/300047090"/>
+    <schema:dateCreated>1498-1500 (creation)</schema:dateCreated>
+    <schema:name xml:lang="it">Pietà</schema:name>
+    <schema:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/Italian"/>
+    <schema:placeOfRepository rdf:nodeID="Na689aa518e404b4a9598b4871736d5b0"/>
+    <schema:height rdf:nodeID="Nb548a362f1204f23800f896659e359c8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/French">
+    <schema:name>French</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/7001168">
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7001168&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7001168</schema:url>
+    <schema:name>Santa Sede (Holy See)</schema:name>
+    <schema:name>Rome (Vatican City)</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300054608">
+    <schema:name>construction (assembling)</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Technique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/JPG%7C500019098#skos:Concept">
+    <schema:name>Bramante, Donato</schema:name>
+    <schema:hasCulture rdf:resource="http://purl.org/getty/vocab/ulan/Italian"/>
+    <schema:deathDate>1514</schema:deathDate>
+    <rdf:type rdf:resource="http://purl.org/vra/Agent"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Person"/>
+    <schema:birthDate>1444</schema:birthDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/n81018544">
+    <rdf:type rdf:resource="http://purl.org/vra/Thing"/>
+    <schema:name>Mary, Blessed Virgin, Saint</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#2">
+    <schema:creator rdf:resource="http://viaf.org/viaf/sourceID/JPG%7C500018431#skos:Concept"/>
+    <schema:description>Bramante was hired by Julius II to begin a radical reconstruction, to replace Old Saint Peter's, and intensive planning by Bramante, Giuliano da Sangallo and Fra Giovanni Giocondo preceded the laying of the foundation stone on 18 April 1506. Since Bramante's first designs of 1506, half a dozen architects had worked under five successive popes, all bringing their own revisions with them. In the 18 remaining years of his life Michelangelo succeeded in 'uniting into a whole the great body of that machine' (Vasari), ensuring that the crossing and dome would follow his overall design, even though the façade and nave remained unresolved. His new design, as presented in the engravings (1569) by Etienne Dupérac, took the form of a centralized building over a Greek cross. The façade was built between 1607 and 1625, and the nave was finally consecrated in 1626; the confessio was built to Maderno's design in 1615-1616.</schema:description>
+    <schema:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300021140"/>
+    <schema:creator rdf:resource="http://viaf.org/viaf/sourceID/JPG%7C500007668#skos:Concept"/>
+    <schema:creator rdf:resource="http://viaf.org/viaf/sourceID/JPG%7C500019098#skos:Concept"/>
+    <schema:material rdf:nodeID="Nd6bc89d2feb14086aacf4bad85794e8e"/>
+    <rdf:type rdf:resource="http://vocab.getty.edu/aat/300170443"/>
+    <schema:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/Italian"/>
+    <schema:name xml:lang="it">San Pietro in Vaticano</schema:name>
+    <schema:name xml:lang="en">St. Peter's Basilica</schema:name>
+    <rdf:type rdf:resource="http://vocab.getty.edu/aat/300007501"/>
+    <rdf:type rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <schema:creator rdf:resource="http://viaf.org/viaf/sourceID/JPG%7C500010654#skos:Concept"/>
+    <schema:about rdf:resource="http://id.loc.gov/authorities/names/n79022118"/>
+    <schema:dateCreated>ca. 1506-1616  (creation)</schema:dateCreated>
+    <schema:hasTechnique rdf:resource="http://vocab.getty.edu/aat/300054608"/>
+    <schema:name xml:lang="en">Saint Peter's Basilica</schema:name>
+    <schema:placeOfSite rdf:nodeID="N2ab38963e6564f71a535bee86e0ff0e6"/>
+    <schema:wasCreated rdf:nodeID="N7577387b4a724f29bb6a15d54283af19"/>
+    <schema:about rdf:resource="http://id.loc.gov/authorities/names/n80030746"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/7012149">
+    <rdf:type rdf:resource="http://purl.org/vra/Country"/>
+    <schema:name>United States</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7012149&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7012149</schema:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300021140">
+    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
+    <rdf:type rdf:resource="http://purl.org/vra/StylePeriod"/>
+    <schema:name>Renaissance</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6bc89d2feb14086aacf4bad85794e8e">
+    <schema:name>marble</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f1514ae8966474d8b142e2237972d06">
+    <schema:name>University of Notre Dame, Architecture Library</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300054225">
+    <rdf:type rdf:resource="http://purl.org/vra/Technique"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
+    <schema:name>photography</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85139020">
+    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
+    <rdf:type rdf:resource="http://purl.org/vra/StylePeriod"/>
+    <schema:name>Twentieth century</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N386a936036c04c49b90f94277bb55a6a">
+    <schema:name>black and white film emulsion; glass</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#1">
+    <schema:name xml:lang="en">Historic architectural views [lantern slide collection]</schema:name>
+    <rdfs:label>Notre Dame VCat Database</rdfs:label>
+    <schema:name xml:lang="en">Massiot Lantern Slide Collection</schema:name>
+    <schema:hasStylePeriod rdf:resource="http://id.loc.gov/authorities/subjects/sh85139020"/>
+    <schema:placeOfPublication rdf:nodeID="Nb844b373af6a4faea6474e4d29e64d18"/>
+    <schema:dateCreated>photography ca. 1885-1925 (creation)</schema:dateCreated>
+    <schema:hasInscription rdf:nodeID="Nbe8cec8b6d56477e8a941674c69a686a"/>
+    <schema:about rdf:resource="http://id.loc.gov/authorities/subjects/sh85040989"/>
+    <schema:material rdf:nodeID="N386a936036c04c49b90f94277bb55a6a"/>
+    <schema:description>[The collection consists of 2,676 lantern slides which are views of buildings and cities in Europe, with some slides from the Middle and Far East as well. These were digitally imaged in 2007.] A. Molteni was an inventor and manufacturer of projection equipment in the late 19th and early 20th century. He styled himself a "Constructeur d'instruments d'Optique, de Physique, de Mathématiques et de Marine." Arthur-Honore Radiguet (1850-1905) was a similarly gifted inventor whose photographic business included working with Molteni and producing lantern slides. He also invented all manner of photographic equipment and especially worked with medical imaging, including the new x-ray techniques, discovered in 1895. He formed a firm with his son-in-law, Gaston Massiot, in 1899. Tragically Radiguet died from the effects of x-ray exposure in 1905. Massiot assumed the firm and was still inventing new apparatus as late as ca. 1936. The firm was still in business as of ca. 1940.</schema:description>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#DataSet"/>
+    <schema:about rdf:resource="http://id.loc.gov/authorities/subjects/n84216944"/>
+    <schema:hasStylePeriod rdf:resource="http://id.loc.gov/authorities/subjects/sh85091984"/>
+    <schema:hasTechnique rdf:resource="http://vocab.getty.edu/aat/300054225"/>
+    <schema:placeOfRepository rdf:nodeID="N39f6a664d5dc46239a4c846a93f8bdc0"/>
+    <schema:creator rdf:nodeID="N941937f32ba84a8c8236936a3bef8f71"/>
+    <schema:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/FrenchClassical"/>
+    <schema:wasCreated rdf:nodeID="N7139c742db704a4089ba9504730866fd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#1008">
+    <schema:contentSize>18 MB</schema:contentSize>
+    <schema:width rdf:nodeID="N2f4dae8c3d2745be97ee8b16320dfc63"/>
+    <schema:hasTechnique rdf:nodeID="N0e1750ccefe9430f8d9e37441d2bd71a"/>
+    <schema:imageOf rdf:resource="#2"/>
+    <schema:height rdf:nodeID="N0d605963bab241509f4852ccbd290c40"/>
+    <schema:dateCreated>2007 (creation)</schema:dateCreated>
+    <rdf:type rdf:resource="http://purl.org/vra/ImageObject"/>
+    <schema:name>View of portico</schema:name>
+    <dcterms:rights rdf:nodeID="Nbd7982f2808b40ba83f9a85b7af602e3"/>
+    <schema:about rdf:resource="http://vocab.getty.edu/aat/300000885"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/n84216944">
+    <rdf:type rdf:resource="http://purl.org/vra/Person"/>
+    <schema:name>Molteni, A.</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1c943543029442583e9a437c9f1bf62">
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:name>Saint Peter's</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd744bf62ce141e2b543d02d5f7c17c2">
+    <schema:value>76.8</schema:value>
+    <schema:unitCode>INH</schema:unitCode>
+    <rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f4dae8c3d2745be97ee8b16320dfc63">
+    <schema:value>3.25</schema:value>
+    <rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue"/>
+    <schema:unitCode>INH</schema:unitCode>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd5095397ac5d46a498317ccd321c40f2">
+    <schema:name>marble</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/1000001">
+    <schema:name>North and Central America</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Continent"/>
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000001&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000001</schema:url>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/JPG%7C500007668#skos:Concept">
+    <schema:birthDate>1556</schema:birthDate>
+    <rdf:type rdf:resource="http://purl.org/vra/Agent"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Person"/>
+    <schema:deathDate>1629</schema:deathDate>
+    <schema:name>Maderno, Carlo</schema:name>
+    <schema:hasCulture rdf:resource="http://purl.org/getty/vocab/ulan/Italian"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7577387b4a724f29bb6a15d54283af19">
+    <schema:endDate>1616</schema:endDate>
+    <rdf:type rdf:resource="http://purl.org/vra/Event"/>
+    <schema:name>Creation</schema:name>
+    <schema:startDate>1506</schema:startDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb844b373af6a4faea6474e4d29e64d18">
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000003"/>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7002883"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000070"/>
+    <schema:description>Courbevoie is a suburb of Paris in the Hauts-de-Seine department.</schema:description>
+    <schema:name>University of Notre Dame, Architecture Library (South Bend, Indiana, United States)</schema:name>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7009061"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e1750ccefe9430f8d9e37441d2bd71a">
+    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Technique"/>
+    <schema:name>digital imaging</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2ab38963e6564f71a535bee86e0ff0e6">
+    <schema:name>Rome (Vatican City), Santa Sede (Holy See), Italy</schema:name>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000080"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000003"/>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7001168"/>
+    <schema:description>Piazza San Pietro</schema:description>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N39f6a664d5dc46239a4c846a93f8bdc0">
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7007252"/>
+    <schema:name>University of Notre Dame, Architecture Library (South Bend, Indiana, United States)</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/CivicStructure"/>
+    <schema:description>Courbevoie is a suburb of Paris in the Hauts-de-Seine department.</schema:description>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7014320"/>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000001"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7012149"/>
+    <schema:containedIn rdf:nodeID="N5f1514ae8966474d8b142e2237972d06"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/1000070">
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000070&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000070</schema:url>
+    <schema:name>France</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/Italian">
+    <schema:name>Italian</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/7007252">
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7007252&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7007252</schema:url>
+    <rdf:type rdf:resource="http://purl.org/vra/State"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:name>Indiana</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne5f9eccf4494404392a45661608495b1">
+    <schema:name>ArtisticActivity</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Event"/>
+    <schema:startDate>1899</schema:startDate>
+    <schema:endDate>1940</schema:endDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/7014320">
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7014320&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7014320</schema:url>
+    <schema:name>South Bend</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/JPG%7C500010654#skos:Concept">
+    <schema:name>Buonarroti, Michelangelo</schema:name>
+    <schema:birthDate>1475</schema:birthDate>
+    <schema:deathDate>1564</schema:deathDate>
+    <schema:hasCulture rdf:resource="http://purl.org/getty/vocab/ulan/Italian"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Person"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300053149">
+    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
+    <schema:name>carving (processes)</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Technique"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbd7982f2808b40ba83f9a85b7af602e3">
+    <rdfs:label>scans retain Creative Commons license</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe8cec8b6d56477e8a941674c69a686a">
+    <rdf:type rdf:resource="http://purl.org/vra/Inscription"/>
+    <schema:description>Original labels: "Projections Molteni Collections et Tirages de Positifs pour Projections G. Massiot &amp; Cie 37 bis 39 Rue de Belfort Courbevoie Seine"</schema:description>
+    <rdf:type rdf:resource="http://purl.org/vra/CreativeWork"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/1000003">
+    <rdf:type rdf:resource="http://purl.org/vra/Continent"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
+    <schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000003&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000003</schema:url>
+    <schema:name>Europe</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/FrenchClassical">
+    <schema:name>French Classical</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85091984">
+    <schema:name>Nineteenth century</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/StylePeriod"/>
+    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7139c742db704a4089ba9504730866fd">
+    <rdf:type rdf:resource="http://purl.org/vra/Event"/>
+    <schema:startDate>1885</schema:startDate>
+    <schema:endDate>1925</schema:endDate>
+    <schema:name>Creation</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/n79084784">
+    <rdf:type rdf:resource="http://purl.org/vra/Thing"/>
+    <schema:name>Jesus Christ</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300000885">
+    <schema:name>architectural elements</schema:name>
+    <rdf:type rdf:resource="http://purl.org/vra/Thing"/>
+  </rdf:Description>
+</rdf:RDF>
