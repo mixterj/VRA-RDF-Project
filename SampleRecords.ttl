@@ -1,263 +1,100 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix lib: <http://purl.org/library/> .
+@prefix library: <http://purl.org/library/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-vra#> .
 @prefix vra: <http://purl.org/vra/> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<#1> a void:DataSet ;
-    rdfs:label "Notre Dame VCat Database" ;
-    vra:about <http://id.loc.gov/authorities/subjects/n84216944>,
-        <http://id.loc.gov/authorities/subjects/sh85040989> ;
-    vra:creator [ a vra:Agent,
-                vra:Organization ;
-            vra:creativeActivity [ a vra:Event ;
-                    vra:endDate "1940" ;
-                    vra:name "ArtisticActivity" ;
-                    vra:startDate "1899" ] ;
-            vra:hasCulture <http://purl.org/getty/vocab/ulan/French> ;
-            vra:name "G. [Gaston] Massiot et Compagnie" ] ;
-    vra:culturalContext <http://purl.org/getty/vocab/ulan/FrenchClassical> ;
-    vra:dateCreated "photography ca. 1885-1925 (creation)" ;
-    vra:description "[The collection consists of 2,676 lantern slides which are views of buildings and cities in Europe, with some slides from the Middle and Far East as well. These were digitally imaged in 2007.] A. Molteni was an inventor and manufacturer of projection equipment in the late 19th and early 20th century. He styled himself a \"Constructeur d'instruments d'Optique, de Physique, de Mathématiques et de Marine.\" Arthur-Honore Radiguet (1850-1905) was a similarly gifted inventor whose photographic business included working with Molteni and producing lantern slides. He also invented all manner of photographic equipment and especially worked with medical imaging, including the new x-ray techniques, discovered in 1895. He formed a firm with his son-in-law, Gaston Massiot, in 1899. Tragically Radiguet died from the effects of x-ray exposure in 1905. Massiot assumed the firm and was still inventing new apparatus as late as ca. 1936. The firm was still in business as of ca. 1940." ;
-    vra:hasInscription [ a vra:CreativeWork,
-                vra:Inscription ;
-            vra:description "Original labels: \"Projections Molteni Collections et Tirages de Positifs pour Projections G. Massiot & Cie 37 bis 39 Rue de Belfort Courbevoie Seine\"" ] ;
-    vra:hasStylePeriod <http://id.loc.gov/authorities/subjects/sh85091984>,
-        <http://id.loc.gov/authorities/subjects/sh85139020> ;
-    vra:hasTechnique <http://vocab.getty.edu/aat/300054225> ;
-    vra:material [ a vra:Material ;
-            vra:name "black and white film emulsion; glass" ] ;
-    vra:name "Historic architectural views [lantern slide collection]"@en,
-        "Massiot Lantern Slide Collection"@en ;
-    vra:placeOfPublication [ a vra:Place ;
-            vra:containedIn <http://vocab.getty.edu/tgn/1000003>,
-                <http://vocab.getty.edu/tgn/1000070>,
-                <http://vocab.getty.edu/tgn/7002883>,
-                <http://vocab.getty.edu/tgn/7009061> ;
-            vra:description "Courbevoie is a suburb of Paris in the Hauts-de-Seine department." ;
-            vra:name "University of Notre Dame, Architecture Library (South Bend, Indiana, United States)" ] ;
-    vra:placeOfRepository [ a vra:CivicStructure,
-                vra:Place ;
-            vra:containedIn [ a vra:Place ;
-                    vra:name "University of Notre Dame, Architecture Library" ],
-                <http://vocab.getty.edu/tgn/1000001>,
-                <http://vocab.getty.edu/tgn/7007252>,
-                <http://vocab.getty.edu/tgn/7012149>,
-                <http://vocab.getty.edu/tgn/7014320> ;
-            vra:description "Courbevoie is a suburb of Paris in the Hauts-de-Seine department." ;
-            vra:name "University of Notre Dame, Architecture Library (South Bend, Indiana, United States)" ] ;
-    vra:wasCreated [ a vra:Event ;
-            vra:endDate "1925" ;
-            vra:name "Creation" ;
-            vra:startDate "1885" ] .
-
-<#1008> a vra:ImageObject ;
-    dcterms:rights [ rdfs:label "scans retain Creative Commons license" ] ;
-    vra:about <http://vocab.getty.edu/aat/300000885> ;
+<#100> a vra:ImageObject ;
+    dcterms:rights [ rdfs:label "© Dr. Ronald V. Wiedenhoeft" ] ;
+    vra:about [ a vra:Thing ;
+            vra:name "bell towers" ] ;
+    vra:about [ a vra:Thing ;
+            vra:name "spires" ] ;
+    vra:about [ a vra:Thing ;
+            vra:name "rose window" ] ;
     vra:contentSize "18 MB" ;
-    vra:dateCreated "2007 (creation)" ;
+    vra:creator [ a vra:Agent ;
+            vra:name "Wiedenhoeft, Ronald" ] ;
+    vra:dateCreated "06/15/90 (creation)" ;
     vra:hasTechnique [ a vra:Intangible,
                 vra:Technique ;
             vra:name "digital imaging" ] ;
-    vra:height [ a vra:QuantitativeValue ;
-            vra:unitCode "INH" ;
-            vra:value "4" ] ;
-    vra:imageOf <#2> ;
-    vra:name "View of portico" ;
-    vra:width [ a vra:QuantitativeValue ;
-            vra:unitCode "INH" ;
-            vra:value "3.25" ] .
+    vra:imageOf <#1> ;
+    vra:name "Total view of West facade" .
 
-<#3> a vra:CreativeWork,
-        <http://vocab.getty.edu/aat/300047090> ;
-    vra:about <http://id.loc.gov/authorities/subjects/n79084784>,
-        <http://id.loc.gov/authorities/subjects/n81018544> ;
-    vra:creator <http://viaf.org/viaf/sourceID/JPG%7C500010654#skos:Concept> ;
-    vra:culturalContext <http://purl.org/getty/vocab/ulan/Italian> ;
-    vra:dateCreated "1498-1500 (creation)" ;
-    vra:description "Commissioned in 1497 by the French Cardinal Jean Villiers de La Grolais (ca. 1430-1499) for his own tomb, it was begun the following year and was finished by 1500. It signals the beginning of Michelangelo's maturity as a sculptor." ;
-    vra:hasStylePeriod <http://vocab.getty.edu/aat/300021140> ;
-    vra:hasTechnique <http://vocab.getty.edu/aat/300053149> ;
+<#1> a vra:CreativeWork,
+        <http://vocab.getty.edu/aat/300007501>,
+        <http://vocab.getty.edu/aat/300170443> ;
+    vra:about <http://id.loc.gov/authorities/names/n81018544> ;
+    vra:creator <http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept> ;
+    vra:culturalContext <http://purl.org/getty/vocab/ulan/French> ;
+    vra:dateCreated "begun 1194 (creation); consecrated 1260 (other)" ;
+    vra:description "The present cathedral was constructed on the foundations of the earlier church; the oldest parts of the cathedral are the crypt and Royal Portal (West Portal), remnants of a Romanesque church destroyed by fire in 1194." ;
+    vra:hasStylePeriod <http://vocab.getty.edu/aat/300020768>,
+        <http://vocab.getty.edu/aat/300020775> ;
+    vra:hasTechnique <http://vocab.getty.edu/aat/300054608> ;
     vra:height [ a vra:QuantitativeValue ;
-            vra:unitCode "INH" ;
-            vra:value "68.5" ] ;
+            vra:unitCode "MTR" ;
+            vra:value "34" ] ;
+    vra:length [ a vra:QuantitativeValue ;
+            vra:unitCode "MTR" ;
+            vra:value "130" ] ;
     vra:material [ a vra:Material ;
-            vra:name "marble" ] ;
-    vra:name "Pietà"@it ;
-    vra:partOf <#2> ;
-    vra:placeOfRepository [ a vra:CivicStructure,
-                vra:Place ;
-            vra:containedIn [ a vra:Place ;
-                    vra:name "Saint Peter's" ],
-                <http://vocab.getty.edu/tgn/1000003>,
-                <http://vocab.getty.edu/tgn/1000080>,
-                <http://vocab.getty.edu/tgn/7001168> ;
-            vra:description "" ;
-            vra:name "Saint Peter's (Rome (Vatican City), Santa Sede (Holy See), Italy)" ] ;
+            vra:name "stone; limestone" ] ;
+    vra:name "Chartres Cathedral"@en,
+        "Cathédrale Notre-Dame de Chartres"@fr,
+        "Notre-Dame de Chartres "@fr ;
+    vra:placeOfSite [ a vra:Place ;
+            vra:containedIn <http://vocab.getty.edu/tgn/1000003>,
+                <http://vocab.getty.edu/tgn/1000070>,
+                <http://vocab.getty.edu/tgn/7002877>,
+                <http://vocab.getty.edu/tgn/7008267> ;
+            vra:description "Eure-et-Loir (department)" ;
+            vra:name "Chartres, Centre, France" ] ;
     vra:wasCreated [ a vra:Event ;
-            vra:endDate "1500" ;
+            vra:endDate "1194" ;
             vra:name "Creation" ;
-            vra:startDate "1498" ] ;
-    vra:width [ a vra:QuantitativeValue ;
-            vra:unitCode "INH" ;
-            vra:value "76.8" ] .
+            vra:startDate "1194" ] .
 
-<http://id.loc.gov/authorities/names/n79022118> a vra:Person ;
-    vra:name "Peter, the Apostle, Saint" .
-
-<http://id.loc.gov/authorities/names/n80030746> a vra:Person ;
-    vra:name "Julius II, Pope, 1443-1513" .
-
-<http://id.loc.gov/authorities/subjects/n79084784> a vra:Thing ;
-    vra:name "Jesus Christ" .
-
-<http://id.loc.gov/authorities/subjects/n81018544> a vra:Thing ;
+<http://id.loc.gov/authorities/names/n81018544> a vra:Thing ;
     vra:name "Mary, Blessed Virgin, Saint" .
-
-<http://id.loc.gov/authorities/subjects/n84216944> a vra:Person ;
-    vra:name "Molteni, A." .
-
-<http://id.loc.gov/authorities/subjects/sh85040989> a vra:Thing ;
-    vra:name "Education" .
-
-<http://id.loc.gov/authorities/subjects/sh85091984> a vra:Intangible,
-        vra:StylePeriod ;
-    vra:name "Nineteenth century" .
-
-<http://id.loc.gov/authorities/subjects/sh85139020> a vra:Intangible,
-        vra:StylePeriod ;
-    vra:name "Twentieth century" .
 
 <http://purl.org/getty/vocab/ulan/French> vra:name "French" .
 
-<http://purl.org/getty/vocab/ulan/FrenchClassical> vra:name "French Classical" .
-
-<http://viaf.org/viaf/sourceID/JPG%7C500007668#skos:Concept> a vra:Agent,
+<http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept> a vra:Agent,
         vra:Person ;
-    vra:birthDate "1556" ;
-    vra:deathDate "1629" ;
-    vra:hasCulture <http://purl.org/getty/vocab/ulan/Italian> ;
-    vra:name "Maderno, Carlo" .
+    vra:name "unknown" .
 
-<http://viaf.org/viaf/sourceID/JPG%7C500018431#skos:Concept> a vra:Agent,
-        vra:Person ;
-    vra:birthDate "1500" ;
-    vra:deathDate "1583" ;
-    vra:hasCulture <http://purl.org/getty/vocab/ulan/Italian> ;
-    vra:name "Ligorio, Pirro" .
+<http://vocab.getty.edu/aat/300020768> a vra:Intangible,
+        vra:StylePeriod ;
+    vra:name "Romanesque" .
 
-<http://viaf.org/viaf/sourceID/JPG%7C500019098#skos:Concept> a vra:Agent,
-        vra:Person ;
-    vra:birthDate "1444" ;
-    vra:deathDate "1514" ;
-    vra:hasCulture <http://purl.org/getty/vocab/ulan/Italian> ;
-    vra:name "Bramante, Donato" .
-
-<http://vocab.getty.edu/aat/300000885> a vra:Thing ;
-    vra:name "architectural elements" .
-
-<http://vocab.getty.edu/aat/300053149> a vra:Intangible,
-        vra:Technique ;
-    vra:name "carving (processes)" .
-
-<http://vocab.getty.edu/aat/300054225> a vra:Intangible,
-        vra:Technique ;
-    vra:name "photography" .
+<http://vocab.getty.edu/aat/300020775> a vra:Intangible,
+        vra:StylePeriod ;
+    vra:name "Gothic (Medieval)" .
 
 <http://vocab.getty.edu/aat/300054608> a vra:Intangible,
         vra:Technique ;
     vra:name "construction (assembling)" .
-
-<http://vocab.getty.edu/tgn/1000001> a vra:Continent,
-        vra:Place ;
-    vra:name "North and Central America" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=1000001&place=&nation=&prev_page=1&english=N&subjectid=1000001" .
-
-<http://vocab.getty.edu/tgn/1000070> a vra:Country,
-        vra:Place ;
-    vra:name "France" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=1000070&place=&nation=&prev_page=1&english=N&subjectid=1000070" .
-
-<http://vocab.getty.edu/tgn/7002883> a vra:Place ;
-    vra:name "Île-de-France" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7002883&place=&nation=&prev_page=1&english=N&subjectid=7002883" .
-
-<http://vocab.getty.edu/tgn/7007252> a vra:Place,
-        vra:State ;
-    vra:name "Indiana" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7007252&place=&nation=&prev_page=1&english=N&subjectid=7007252" .
-
-<http://vocab.getty.edu/tgn/7009061> a vra:Place ;
-    vra:name "Courbevoie" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7009061&place=&nation=&prev_page=1&english=N&subjectid=7009061" .
-
-<http://vocab.getty.edu/tgn/7012149> a vra:Country,
-        vra:Place ;
-    vra:name "United States" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7012149&place=&nation=&prev_page=1&english=N&subjectid=7012149" .
-
-<http://vocab.getty.edu/tgn/7014320> a vra:Place ;
-    vra:name "South Bend" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7014320&place=&nation=&prev_page=1&english=N&subjectid=7014320" .
-
-<#2> a vra:CreativeWork,
-        <http://vocab.getty.edu/aat/300007501>,
-        <http://vocab.getty.edu/aat/300170443> ;
-    vra:about <http://id.loc.gov/authorities/names/n79022118>,
-        <http://id.loc.gov/authorities/names/n80030746> ;
-    vra:creator <http://viaf.org/viaf/sourceID/JPG%7C500007668#skos:Concept>,
-        <http://viaf.org/viaf/sourceID/JPG%7C500010654#skos:Concept>,
-        <http://viaf.org/viaf/sourceID/JPG%7C500018431#skos:Concept>,
-        <http://viaf.org/viaf/sourceID/JPG%7C500019098#skos:Concept> ;
-    vra:culturalContext <http://purl.org/getty/vocab/ulan/Italian> ;
-    vra:dateCreated "ca. 1506-1616  (creation)" ;
-    vra:description "Bramante was hired by Julius II to begin a radical reconstruction, to replace Old Saint Peter's, and intensive planning by Bramante, Giuliano da Sangallo and Fra Giovanni Giocondo preceded the laying of the foundation stone on 18 April 1506. Since Bramante's first designs of 1506, half a dozen architects had worked under five successive popes, all bringing their own revisions with them. In the 18 remaining years of his life Michelangelo succeeded in 'uniting into a whole the great body of that machine' (Vasari), ensuring that the crossing and dome would follow his overall design, even though the façade and nave remained unresolved. His new design, as presented in the engravings (1569) by Etienne Dupérac, took the form of a centralized building over a Greek cross. The façade was built between 1607 and 1625, and the nave was finally consecrated in 1626; the confessio was built to Maderno's design in 1615-1616." ;
-    vra:hasStylePeriod <http://vocab.getty.edu/aat/300021140> ;
-    vra:hasTechnique <http://vocab.getty.edu/aat/300054608> ;
-    vra:material [ a vra:Material ;
-            vra:name "marble" ] ;
-    vra:name "Saint Peter's Basilica"@en,
-        "St. Peter's Basilica"@en,
-        "San Pietro in Vaticano"@it ;
-    vra:placeOfSite [ a vra:Place ;
-            vra:containedIn <http://vocab.getty.edu/tgn/1000003>,
-                <http://vocab.getty.edu/tgn/1000080>,
-                <http://vocab.getty.edu/tgn/7001168> ;
-            vra:description "Piazza San Pietro" ;
-            vra:name "Rome (Vatican City), Santa Sede (Holy See), Italy" ] ;
-    vra:wasCreated [ a vra:Event ;
-            vra:endDate "1616" ;
-            vra:name "Creation" ;
-            vra:startDate "1506" ] .
-
-<http://viaf.org/viaf/sourceID/JPG%7C500010654#skos:Concept> a vra:Agent,
-        vra:Person ;
-    vra:birthDate "1475" ;
-    vra:deathDate "1564" ;
-    vra:hasCulture <http://purl.org/getty/vocab/ulan/Italian> ;
-    vra:name "Buonarroti, Michelangelo" .
-
-<http://vocab.getty.edu/aat/300021140> a vra:Intangible,
-        vra:StylePeriod ;
-    vra:name "Renaissance" .
-
-<http://vocab.getty.edu/tgn/1000080> a vra:Country,
-        vra:Place ;
-    vra:name "Italy" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=1000080&place=&nation=&prev_page=1&english=N&subjectid=1000080" .
-
-<http://vocab.getty.edu/tgn/7001168> a vra:Place ;
-    vra:name "Rome (Vatican City)",
-        "Santa Sede (Holy See)" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7001168&place=&nation=&prev_page=1&english=N&subjectid=7001168" .
 
 <http://vocab.getty.edu/tgn/1000003> a vra:Continent,
         vra:Place ;
     vra:name "Europe" ;
     vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=1000003&place=&nation=&prev_page=1&english=N&subjectid=1000003" .
 
-<http://purl.org/getty/vocab/ulan/Italian> vra:name "Italian" .
+<http://vocab.getty.edu/tgn/1000070> a vra:Country,
+        vra:Place ;
+    vra:name "France" ;
+    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=1000070&place=&nation=&prev_page=1&english=N&subjectid=1000070" .
+
+<http://vocab.getty.edu/tgn/7002877> a vra:Place ;
+    vra:name "Centre" ;
+    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7002877&place=&nation=&prev_page=1&english=N&subjectid=7002877" .
+
+<http://vocab.getty.edu/tgn/7008267> a vra:Place ;
+    vra:name "Chartres" ;
+    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7008267&place=&nation=&prev_page=1&english=N&subjectid=7008267" .
