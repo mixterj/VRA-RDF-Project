@@ -16,7 +16,7 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
   <owl:Ontology rdf:about="http://jmixter.s3-website-us-east-1.amazonaws.com/thesis/VRA_OntologyRevised.owl">
-    <dc:creator>Jeff Mixter </dc:creator>
+    <dc:creator>VRA Core Oversight Committee</dc:creator>
     <dc:description>VRA/Element Vocabulary for representing entities in the Proposed VRA data model</dc:description>
     <dc:title xml:lang="en">VRA/Element Vocabulary</dc:title>
   </owl:Ontology>
