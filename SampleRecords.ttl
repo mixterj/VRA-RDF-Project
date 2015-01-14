@@ -1,5 +1,5 @@
-### This Sample records was procuced using the XSLT_Stylesheet.xsl from an sample XML record that provided
-on the VRA Core webstie (http://core.vraweb.org/examples/html/example003_full.html) ###
+### This Sample record was produced using the XSLT_Stylesheet.xsl from an sample XML record that provided
+on the VRA Core website (http://core.vraweb.org/examples/html/example003_full.html) ###
 
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
