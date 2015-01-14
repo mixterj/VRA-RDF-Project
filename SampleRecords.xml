@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:schema="http://purl.org/vra/">
+	xmlns:vra="http://purl.org/vra/">
 	<rdf:Description rdf:about="#3">
-		<schema:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/European" />
-		<schema:hasTechnique rdf:resource="http://vocab.getty.edu/aat/300054608" />
-		<schema:creator
+		<vra:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/European" />
+		<vra:hasTechnique rdf:resource="http://vocab.getty.edu/aat/300054608" />
+		<vra:creator
 			rdf:resource="http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept" />
-		<schema:name xml:lang="en">Stonehenge</schema:name>
+		<vra:name xml:lang="en">Stonehenge</vra:name>
 		<rdf:type rdf:resource="http://vocab.getty.edu/aat/300007680" />
-		<schema:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300019267" />
-		<schema:description>Visitors see today the remains of the final stage of
+		<vra:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300019267" />
+		<vra:description>Visitors see today the remains of the final stage of
 			Stonehenge, a prehistoric temple used as a place of worship and
 			burial. In its first stage it was a large earthwork--"henge"--a bank
 			and ditch enclosing the Aubrey holes (named after their 17th century
@@ -22,148 +22,148 @@
 			pointed to the midsummer sunrise. Even later (1550 BCE) the
 			bluestones were rearranged in the horseshoe and circle.
 
-		</schema:description>
-		<schema:about rdf:resource="http://id.loc.gov/authorities/subjects/sh85130480" />
+		</vra:description>
+		<vra:about rdf:resource="http://id.loc.gov/authorities/subjects/sh85130480" />
 		<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
-		<schema:height rdf:nodeID="N709cfe289c6240328a0efc932ec61b0f" />
-		<schema:material rdf:nodeID="N34d7148900124c0d8ba154de7af2fe06" />
-		<schema:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/British" />
+		<vra:height rdf:nodeID="N709cfe289c6240328a0efc932ec61b0f" />
+		<vra:material rdf:nodeID="N34d7148900124c0d8ba154de7af2fe06" />
+		<vra:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/British" />
 		<rdf:type rdf:resource="http://vocab.getty.edu/aat/300006958" />
-		<schema:about rdf:resource="http://id.loc.gov/authorities/subjects/sh85009013" />
-		<schema:wasCreated rdf:nodeID="Nf92ad922e2304dc58195573168f1eeae" />
-		<schema:weight rdf:nodeID="N519e869a4b30483bbb3cd94d15e6a02f" />
+		<vra:about rdf:resource="http://id.loc.gov/authorities/subjects/sh85009013" />
+		<vra:wasCreated rdf:nodeID="Nf92ad922e2304dc58195573168f1eeae" />
+		<vra:weight rdf:nodeID="N519e869a4b30483bbb3cd94d15e6a02f" />
 		<rdf:type rdf:resource="http://vocab.getty.edu/aat/300007595" />
-		<schema:placeOfSite rdf:nodeID="N285d0120e2844ba9824f27f46845f38f" />
-		<schema:diameter rdf:nodeID="N11385dc7653d4cf58c3be892a5eb8e3d" />
-		<schema:dateCreated>ca. 3200- ca. 1600 BCE (inclusive)</schema:dateCreated>
-		<schema:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300019278" />
-		<schema:name xml:lang="en">Stone Henge</schema:name>
+		<vra:placeOfSite rdf:nodeID="N285d0120e2844ba9824f27f46845f38f" />
+		<vra:diameter rdf:nodeID="N11385dc7653d4cf58c3be892a5eb8e3d" />
+		<vra:dateCreated>ca. 3200- ca. 1600 BCE (inclusive)</vra:dateCreated>
+		<vra:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300019278" />
+		<vra:name xml:lang="en">Stone Henge</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:about="#102">
 		<dcterms:rights rdf:nodeID="N8840b3dec3b140108880881084d6e001" />
 		<rdf:type rdf:resource="http://purl.org/vra/ImageObject" />
-		<schema:creator rdf:nodeID="N7c5588e1e35747f49850ff0fa675ed89" />
-		<schema:imageOf rdf:resource="#3" />
-		<schema:name>Detail of center axis</schema:name>
-		<schema:contentSize>18 MB</schema:contentSize>
-		<schema:about rdf:nodeID="N2cb94f24ed8641f5b66ea4cc9c480d2f" />
-		<schema:hasTechnique rdf:nodeID="N045b0ac5b40a400ca1d11a6fcd8252d6" />
+		<vra:creator rdf:nodeID="N7c5588e1e35747f49850ff0fa675ed89" />
+		<vra:imageOf rdf:resource="#3" />
+		<vra:name>Detail of center axis</vra:name>
+		<vra:contentSize>18 MB</vra:contentSize>
+		<vra:about rdf:nodeID="N2cb94f24ed8641f5b66ea4cc9c480d2f" />
+		<vra:hasTechnique rdf:nodeID="N045b0ac5b40a400ca1d11a6fcd8252d6" />
 	</rdf:Description>
 	<rdf:Description rdf:about="http://vocab.getty.edu/aat/300019267">
 		<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
-		<schema:name>Neolithic</schema:name>
+		<vra:name>Neolithic</vra:name>
 		<rdf:type rdf:resource="http://purl.org/vra/StylePeriod" />
 	</rdf:Description>
 	<rdf:Description rdf:about="http://vocab.getty.edu/aat/300019278">
 		<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
 		<rdf:type rdf:resource="http://purl.org/vra/StylePeriod" />
-		<schema:name>Late Bronze Age</schema:name>
+		<vra:name>Late Bronze Age</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N285d0120e2844ba9824f27f46845f38f">
 		<rdf:type rdf:resource="http://purl.org/vra/Place" />
-		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7008591" />
-		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7011211" />
-		<schema:name>Stonehenge (Wiltshire, England, United Kingdom)</schema:name>
-		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000003" />
-		<schema:description>on the Salisbury Plain</schema:description>
-		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7008180" />
-		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7002445" />
+		<vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/7008591" />
+		<vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/7011211" />
+		<vra:name>Stonehenge (Wiltshire, England, United Kingdom)</vra:name>
+		<vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000003" />
+		<vra:description>on the Salisbury Plain</vra:description>
+		<vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/7008180" />
+		<vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/7002445" />
 	</rdf:Description>
 	<rdf:Description rdf:about="http://vocab.getty.edu/aat/300054608">
 		<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
 		<rdf:type rdf:resource="http://purl.org/vra/Technique" />
-		<schema:name>construction (assembling)</schema:name>
+		<vra:name>construction (assembling)</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="Nf92ad922e2304dc58195573168f1eeae">
-		<schema:startDate>-3200</schema:startDate>
+		<vra:startDate>-3200</vra:startDate>
 		<rdf:type rdf:resource="http://purl.org/vra/Event" />
-		<schema:name>Inclusive</schema:name>
-		<schema:endDate>-1500</schema:endDate>
+		<vra:name>Inclusive</vra:name>
+		<vra:endDate>-1500</vra:endDate>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N2cb94f24ed8641f5b66ea4cc9c480d2f">
 		<rdf:type rdf:resource="http://purl.org/vra/Thing" />
-		<schema:name></schema:name>
+		<vra:name></vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/7008180">
-		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7008180&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7008180
-		</schema:url>
+		<vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=7008180&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7008180
+		</vra:url>
 		<rdf:type rdf:resource="http://purl.org/vra/Place" />
-		<schema:name>Wiltshire</schema:name>
+		<vra:name>Wiltshire</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N045b0ac5b40a400ca1d11a6fcd8252d6">
-		<schema:name>digital imaging</schema:name>
+		<vra:name>digital imaging</vra:name>
 		<rdf:type rdf:resource="http://purl.org/vra/Technique" />
 		<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
 	</rdf:Description>
 	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/7002445">
 		<rdf:type rdf:resource="http://purl.org/vra/Place" />
-		<schema:name>England</schema:name>
-		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7002445&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7002445
-		</schema:url>
+		<vra:name>England</vra:name>
+		<vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=7002445&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7002445
+		</vra:url>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N519e869a4b30483bbb3cd94d15e6a02f">
-		<schema:value>45.2</schema:value>
+		<vra:value>45.2</vra:value>
 		<rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue" />
 	</rdf:Description>
 	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/7011211">
-		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7011211&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7011211
-		</schema:url>
-		<schema:name>Stonehenge</schema:name>
+		<vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=7011211&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7011211
+		</vra:url>
+		<vra:name>Stonehenge</vra:name>
 		<rdf:type rdf:resource="http://purl.org/vra/Place" />
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/European">
-		<schema:name>European</schema:name>
+		<vra:name>European</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/1000003">
-		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000003&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000003
-		</schema:url>
+		<vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000003&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000003
+		</vra:url>
 		<rdf:type rdf:resource="http://purl.org/vra/Place" />
 		<rdf:type rdf:resource="http://purl.org/vra/Continent" />
-		<schema:name>Europe</schema:name>
+		<vra:name>Europe</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/7008591">
 		<rdf:type rdf:resource="http://purl.org/vra/Country" />
 		<rdf:type rdf:resource="http://purl.org/vra/Place" />
-		<schema:name>United	Kingdom</schema:name>
-		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7008591&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7008591
-		</schema:url>
+		<vra:name>United	Kingdom</vra:name>
+		<vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=7008591&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7008591
+		</vra:url>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N11385dc7653d4cf58c3be892a5eb8e3d">
 		<rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue" />
-		<schema:unitCode>MTR</schema:unitCode>
-		<schema:value>29.7</schema:value>
+		<vra:unitCode>MTR</vra:unitCode>
+		<vra:value>29.7</vra:value>
 	</rdf:Description>
 	<rdf:Description
 		rdf:about="http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept">
 		<rdf:type rdf:resource="http://purl.org/vra/Agent" />
 		<rdf:type rdf:resource="http://purl.org/vra/Person" />
-		<schema:name>unknown</schema:name>
+		<vra:name>unknown</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85130480">
 		<rdf:type rdf:resource="http://purl.org/vra/Thing" />
-		<schema:name>Sun Rising	and setting</schema:name>
+		<vra:name>Sun Rising	and setting</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N7c5588e1e35747f49850ff0fa675ed89">
 		<rdf:type rdf:resource="http://purl.org/vra/Agent" />
-		<schema:name></schema:name>
+		<vra:name></vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N34d7148900124c0d8ba154de7af2fe06">
 		<rdf:type rdf:resource="http://purl.org/vra/Material" />
-		<schema:name>stone; sarsen (sandstone); bluestone</schema:name>
+		<vra:name>stone; sarsen (sandstone); bluestone</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N8840b3dec3b140108880881084d6e001">
 		<rdfs:label>© Mary Ann Sullivan</rdfs:label>
 	</rdf:Description>
 	<rdf:Description rdf:nodeID="N709cfe289c6240328a0efc932ec61b0f">
-		<schema:value>6.7</schema:value>
+		<vra:value>6.7</vra:value>
 		<rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue" />
-		<schema:unitCode>MTR</schema:unitCode>
+		<vra:unitCode>MTR</vra:unitCode>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85009013">
 		<rdf:type rdf:resource="http://purl.org/vra/Thing" />
-		<schema:name>Astronomy,Ancient</schema:name>
+		<vra:name>Astronomy, Ancient</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/British">
-		<schema:name>British</schema:name>
+		<vra:name>British</vra:name>
 	</rdf:Description>
 </rdf:RDF>
