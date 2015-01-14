@@ -1,144 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:rdfs="http://www.w3.org/2000/01/rdf-vra#"
-   xmlns:vra="http://purl.org/vra/"
->
-  <rdf:Description rdf:nodeID="ub39bL16C18">
-    <rdf:type rdf:resource="http://purl.org/vra/Thing"/>
-    <vra:name>rose window</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300054608">
-    <rdf:type rdf:resource="http://purl.org/vra/Technique"/>
-    <vra:name>construction (assembling)</vra:name>
-    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/French">
-    <vra:name>French</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL14C18">
-    <vra:name>spires</vra:name>
-    <rdf:type rdf:resource="http://purl.org/vra/Thing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300020768">
-    <rdf:type rdf:resource="http://purl.org/vra/StylePeriod"/>
-    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
-    <vra:name>Romanesque</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL19C20">
-    <rdf:type rdf:resource="http://purl.org/vra/Agent"/>
-    <vra:name>Wiedenhoeft, Ronald</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL52C24">
-    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
-    <vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000070"/>
-    <vra:description>Eure-et-Loir (department)</vra:description>
-    <vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000003"/>
-    <vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/7002877"/>
-    <vra:containedIn rdf:resource="http://vocab.getty.edu/tgn/7008267"/>
-    <vra:name>Chartres, Centre, France</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300020775">
-    <vra:name>Gothic (Medieval)</vra:name>
-    <rdf:type rdf:resource="http://purl.org/vra/StylePeriod"/>
-    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL11C20">
-    <rdfs:label>© Dr. Ronald V. Wiedenhoeft</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/7008267">
-    <vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=7008267&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7008267</vra:url>
-    <vra:name>Chartres</vra:name>
-    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#1">
-    <vra:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/French"/>
-    <vra:name xml:lang="fr">Cathédrale Notre-Dame de Chartres</vra:name>
-    <rdf:type rdf:resource="http://purl.org/vra/CreativeWork"/>
-    <vra:placeOfSite rdf:nodeID="ub39bL52C24"/>
-    <rdf:type rdf:resource="http://vocab.getty.edu/aat/300170443"/>
-    <vra:wasCreated rdf:nodeID="ub39bL59C23"/>
-    <vra:creator rdf:resource="http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept"/>
-    <vra:about rdf:resource="http://id.loc.gov/authorities/names/n81018544"/>
-    <vra:name xml:lang="fr">Notre-Dame de Chartres </vra:name>
-    <vra:dateCreated>begun 1194 (creation); consecrated 1260 (other)</vra:dateCreated>
-    <vra:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300020768"/>
-    <vra:length rdf:nodeID="ub39bL42C19"/>
-    <vra:description>The present cathedral was constructed on the foundations of the earlier church; the oldest parts of the cathedral are the crypt and Royal Portal (West Portal), remnants of a Romanesque church destroyed by fire in 1194.</vra:description>
-    <vra:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300020775"/>
-    <rdf:type rdf:resource="http://vocab.getty.edu/aat/300007501"/>
-    <vra:hasTechnique rdf:resource="http://vocab.getty.edu/aat/300054608"/>
-    <vra:height rdf:nodeID="ub39bL39C19"/>
-    <vra:name xml:lang="en">Chartres Cathedral</vra:name>
-    <vra:material rdf:nodeID="ub39bL45C21"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n81018544">
-    <rdf:type rdf:resource="http://purl.org/vra/Thing"/>
-    <vra:name>Mary, Blessed Virgin, Saint</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL45C21">
-    <rdf:type rdf:resource="http://purl.org/vra/Material"/>
-    <vra:name>stone; limestone</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept">
-    <rdf:type rdf:resource="http://purl.org/vra/Agent"/>
-    <rdf:type rdf:resource="http://purl.org/vra/Person"/>
-    <vra:name>unknown</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/1000070">
-    <vra:name>France</vra:name>
-    <rdf:type rdf:resource="http://purl.org/vra/Country"/>
-    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
-    <vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000070&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000070</vra:url>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL12C18">
-    <rdf:type rdf:resource="http://purl.org/vra/Thing"/>
-    <vra:name>bell towers</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/7002877">
-    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
-    <vra:name>Centre</vra:name>
-    <vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=7002877&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7002877</vra:url>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL42C19">
-    <vra:unitCode>MTR</vra:unitCode>
-    <vra:value>130</vra:value>
-    <rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#100">
-    <vra:dateCreated>06/15/90 (creation)</vra:dateCreated>
-    <dcterms:rights rdf:nodeID="ub39bL11C20"/>
-    <vra:creator rdf:nodeID="ub39bL19C20"/>
-    <rdf:type rdf:resource="http://purl.org/vra/ImageObject"/>
-    <vra:imageOf rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#1"/>
-    <vra:about rdf:nodeID="ub39bL16C18"/>
-    <vra:contentSize>18 MB</vra:contentSize>
-    <vra:about rdf:nodeID="ub39bL14C18"/>
-    <vra:hasTechnique rdf:nodeID="ub39bL22C25"/>
-    <vra:about rdf:nodeID="ub39bL12C18"/>
-    <vra:name>Total view of West facade</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/tgn/1000003">
-    <rdf:type rdf:resource="http://purl.org/vra/Place"/>
-    <vra:name>Europe</vra:name>
-    <vra:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000003&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000003</vra:url>
-    <rdf:type rdf:resource="http://purl.org/vra/Continent"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL59C23">
-    <vra:endDate>1194</vra:endDate>
-    <vra:startDate>1194</vra:startDate>
-    <rdf:type rdf:resource="http://purl.org/vra/Event"/>
-    <vra:name>Creation</vra:name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL22C25">
-    <vra:name>digital imaging</vra:name>
-    <rdf:type rdf:resource="http://purl.org/vra/Intangible"/>
-    <rdf:type rdf:resource="http://purl.org/vra/Technique"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub39bL39C19">
-    <vra:unitCode>MTR</vra:unitCode>
-    <rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue"/>
-    <vra:value>34</vra:value>
-  </rdf:Description>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:schema="http://purl.org/vra/">
+	<rdf:Description rdf:about="#3">
+		<schema:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/European" />
+		<schema:hasTechnique rdf:resource="http://vocab.getty.edu/aat/300054608" />
+		<schema:creator
+			rdf:resource="http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept" />
+		<schema:name xml:lang="en">Stonehenge</schema:name>
+		<rdf:type rdf:resource="http://vocab.getty.edu/aat/300007680" />
+		<schema:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300019267" />
+		<schema:description>Visitors see today the remains of the final stage of
+			Stonehenge, a prehistoric temple used as a place of worship and
+			burial. In its first stage it was a large earthwork--"henge"--a bank
+			and ditch enclosing the Aubrey holes (named after their 17th century
+			discoverer) arranged in a circle. Later (around 2100 BCE) 80
+			bluestones were brought from the Preseli mountains in Wales and
+			arranged in a double circle in the center. Somewhat later sarsen
+			stones were arranged in an outer circle with continuous lintels and
+			five trilithons were arranged in a horseshoe, the axis of which
+			pointed to the midsummer sunrise. Even later (1550 BCE) the
+			bluestones were rearranged in the horseshoe and circle.
+
+		</schema:description>
+		<schema:about rdf:resource="http://id.loc.gov/authorities/subjects/sh85130480" />
+		<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+		<schema:height rdf:nodeID="N709cfe289c6240328a0efc932ec61b0f" />
+		<schema:material rdf:nodeID="N34d7148900124c0d8ba154de7af2fe06" />
+		<schema:culturalContext rdf:resource="http://purl.org/getty/vocab/ulan/British" />
+		<rdf:type rdf:resource="http://vocab.getty.edu/aat/300006958" />
+		<schema:about rdf:resource="http://id.loc.gov/authorities/subjects/sh85009013" />
+		<schema:wasCreated rdf:nodeID="Nf92ad922e2304dc58195573168f1eeae" />
+		<schema:weight rdf:nodeID="N519e869a4b30483bbb3cd94d15e6a02f" />
+		<rdf:type rdf:resource="http://vocab.getty.edu/aat/300007595" />
+		<schema:placeOfSite rdf:nodeID="N285d0120e2844ba9824f27f46845f38f" />
+		<schema:diameter rdf:nodeID="N11385dc7653d4cf58c3be892a5eb8e3d" />
+		<schema:dateCreated>ca. 3200- ca. 1600 BCE (inclusive)</schema:dateCreated>
+		<schema:hasStylePeriod rdf:resource="http://vocab.getty.edu/aat/300019278" />
+		<schema:name xml:lang="en">Stone Henge</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="#102">
+		<dcterms:rights rdf:nodeID="N8840b3dec3b140108880881084d6e001" />
+		<rdf:type rdf:resource="http://purl.org/vra/ImageObject" />
+		<schema:creator rdf:nodeID="N7c5588e1e35747f49850ff0fa675ed89" />
+		<schema:imageOf rdf:resource="#3" />
+		<schema:name>Detail of center axis</schema:name>
+		<schema:contentSize>18 MB</schema:contentSize>
+		<schema:about rdf:nodeID="N2cb94f24ed8641f5b66ea4cc9c480d2f" />
+		<schema:hasTechnique rdf:nodeID="N045b0ac5b40a400ca1d11a6fcd8252d6" />
+	</rdf:Description>
+	<rdf:Description rdf:about="http://vocab.getty.edu/aat/300019267">
+		<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
+		<schema:name>Neolithic</schema:name>
+		<rdf:type rdf:resource="http://purl.org/vra/StylePeriod" />
+	</rdf:Description>
+	<rdf:Description rdf:about="http://vocab.getty.edu/aat/300019278">
+		<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
+		<rdf:type rdf:resource="http://purl.org/vra/StylePeriod" />
+		<schema:name>Late Bronze Age</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N285d0120e2844ba9824f27f46845f38f">
+		<rdf:type rdf:resource="http://purl.org/vra/Place" />
+		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7008591" />
+		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7011211" />
+		<schema:name>Stonehenge (Wiltshire, England, United Kingdom)</schema:name>
+		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/1000003" />
+		<schema:description>on the Salisbury Plain</schema:description>
+		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7008180" />
+		<schema:containedIn rdf:resource="http://vocab.getty.edu/tgn/7002445" />
+	</rdf:Description>
+	<rdf:Description rdf:about="http://vocab.getty.edu/aat/300054608">
+		<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
+		<rdf:type rdf:resource="http://purl.org/vra/Technique" />
+		<schema:name>construction (assembling)</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="Nf92ad922e2304dc58195573168f1eeae">
+		<schema:startDate>-3200</schema:startDate>
+		<rdf:type rdf:resource="http://purl.org/vra/Event" />
+		<schema:name>Inclusive</schema:name>
+		<schema:endDate>-1500</schema:endDate>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N2cb94f24ed8641f5b66ea4cc9c480d2f">
+		<rdf:type rdf:resource="http://purl.org/vra/Thing" />
+		<schema:name></schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/7008180">
+		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7008180&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7008180
+		</schema:url>
+		<rdf:type rdf:resource="http://purl.org/vra/Place" />
+		<schema:name>Wiltshire</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N045b0ac5b40a400ca1d11a6fcd8252d6">
+		<schema:name>digital imaging</schema:name>
+		<rdf:type rdf:resource="http://purl.org/vra/Technique" />
+		<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
+	</rdf:Description>
+	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/7002445">
+		<rdf:type rdf:resource="http://purl.org/vra/Place" />
+		<schema:name>England</schema:name>
+		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7002445&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7002445
+		</schema:url>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N519e869a4b30483bbb3cd94d15e6a02f">
+		<schema:value>45.2</schema:value>
+		<rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue" />
+	</rdf:Description>
+	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/7011211">
+		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7011211&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7011211
+		</schema:url>
+		<schema:name>Stonehenge</schema:name>
+		<rdf:type rdf:resource="http://purl.org/vra/Place" />
+	</rdf:Description>
+	<rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/European">
+		<schema:name>European</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/1000003">
+		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=1000003&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=1000003
+		</schema:url>
+		<rdf:type rdf:resource="http://purl.org/vra/Place" />
+		<rdf:type rdf:resource="http://purl.org/vra/Continent" />
+		<schema:name>Europe</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://vocab.getty.edu/tgn/7008591">
+		<rdf:type rdf:resource="http://purl.org/vra/Country" />
+		<rdf:type rdf:resource="http://purl.org/vra/Place" />
+		<schema:name>United	Kingdom</schema:name>
+		<schema:url>http://www.getty.edu/vow/TGNFullDisplay?find=7008591&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=7008591
+		</schema:url>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N11385dc7653d4cf58c3be892a5eb8e3d">
+		<rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue" />
+		<schema:unitCode>MTR</schema:unitCode>
+		<schema:value>29.7</schema:value>
+	</rdf:Description>
+	<rdf:Description
+		rdf:about="http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept">
+		<rdf:type rdf:resource="http://purl.org/vra/Agent" />
+		<rdf:type rdf:resource="http://purl.org/vra/Person" />
+		<schema:name>unknown</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85130480">
+		<rdf:type rdf:resource="http://purl.org/vra/Thing" />
+		<schema:name>Sun Rising	and setting</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N7c5588e1e35747f49850ff0fa675ed89">
+		<rdf:type rdf:resource="http://purl.org/vra/Agent" />
+		<schema:name></schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N34d7148900124c0d8ba154de7af2fe06">
+		<rdf:type rdf:resource="http://purl.org/vra/Material" />
+		<schema:name>stone; sarsen (sandstone); bluestone</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N8840b3dec3b140108880881084d6e001">
+		<rdfs:label>© Mary Ann Sullivan</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="N709cfe289c6240328a0efc932ec61b0f">
+		<schema:value>6.7</schema:value>
+		<rdf:type rdf:resource="http://purl.org/vra/QuantitativeValue" />
+		<schema:unitCode>MTR</schema:unitCode>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85009013">
+		<rdf:type rdf:resource="http://purl.org/vra/Thing" />
+		<schema:name>Astronomy,Ancient</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/British">
+		<schema:name>British</schema:name>
+	</rdf:Description>
 </rdf:RDF>
