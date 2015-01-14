@@ -161,7 +161,7 @@
 	</rdf:Description>
 	<rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85009013">
 		<rdf:type rdf:resource="http://purl.org/vra/Thing" />
-		<vra:name>Astronomy, Ancient</vra:name>
+		<vra:name>Astronomy,Ancient</vra:name>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/getty/vocab/ulan/British">
 		<vra:name>British</vra:name>
