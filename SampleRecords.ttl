@@ -1,81 +1,97 @@
+### This ###
+
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix library: <http://purl.org/library/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-vra#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vra: <http://purl.org/vra/> .
-@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<#100> a vra:ImageObject ;
-    dcterms:rights [ rdfs:label "© Dr. Ronald V. Wiedenhoeft" ] ;
+<#102> a vra:ImageObject ;
+    dcterms:rights [ rdfs:label "© Mary Ann Sullivan" ] ;
     vra:about [ a vra:Thing ;
-            vra:name "bell towers" ] ;
-    vra:about [ a vra:Thing ;
-            vra:name "spires" ] ;
-    vra:about [ a vra:Thing ;
-            vra:name "rose window" ] ;
+            vra:name "" ] ;
     vra:contentSize "18 MB" ;
     vra:creator [ a vra:Agent ;
-            vra:name "Wiedenhoeft, Ronald" ] ;
-    vra:dateCreated "06/15/90 (creation)" ;
+            vra:name "" ] ;
     vra:hasTechnique [ a vra:Intangible,
                 vra:Technique ;
             vra:name "digital imaging" ] ;
-    vra:imageOf <#1> ;
-    vra:name "Total view of West facade" .
+    vra:imageOf <#3> ;
+    vra:name "Detail of center axis" .
 
-<#1> a vra:CreativeWork,
-        <http://vocab.getty.edu/aat/300007501>,
-        <http://vocab.getty.edu/aat/300170443> ;
-    vra:about <http://id.loc.gov/authorities/names/n81018544> ;
+<#3> a vra:CreativeWork,
+        <http://vocab.getty.edu/aat/300006958>,
+        <http://vocab.getty.edu/aat/300007595>,
+        <http://vocab.getty.edu/aat/300007680> ;
+    vra:about <http://id.loc.gov/authorities/subjects/sh85009013>,
+        <http://id.loc.gov/authorities/subjects/sh85130480> ;
     vra:creator <http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept> ;
-    vra:culturalContext <http://purl.org/getty/vocab/ulan/French> ;
-    vra:dateCreated "begun 1194 (creation); consecrated 1260 (other)" ;
-    vra:description "The present cathedral was constructed on the foundations of the earlier church; the oldest parts of the cathedral are the crypt and Royal Portal (West Portal), remnants of a Romanesque church destroyed by fire in 1194." ;
-    vra:hasStylePeriod <http://vocab.getty.edu/aat/300020768>,
-        <http://vocab.getty.edu/aat/300020775> ;
+    vra:culturalContext <http://purl.org/getty/vocab/ulan/British>,
+        <http://purl.org/getty/vocab/ulan/European> ;
+    vra:dateCreated "ca. 3200- ca. 1600 BCE (inclusive)" ;
+    vra:description """Visitors see today the remains of the final stage of
+			Stonehenge, a prehistoric temple used as a place of worship and
+			burial. In its first stage it was a large earthwork--"henge"--a bank
+			and ditch enclosing the Aubrey holes (named after their 17th century
+			discoverer) arranged in a circle. Later (around 2100 BCE) 80
+			bluestones were brought from the Preseli mountains in Wales and
+			arranged in a double circle in the center. Somewhat later sarsen
+			stones were arranged in an outer circle with continuous lintels and
+			five trilithons were arranged in a horseshoe, the axis of which
+			pointed to the midsummer sunrise. Even later (1550 BCE) the
+			bluestones were rearranged in the horseshoe and circle.
+
+		""";
+    vra:diameter [ a vra:QuantitativeValue ;
+            vra:unitCode "MTR" ;
+            vra:value "29.7" ] ;
+    vra:hasStylePeriod <http://vocab.getty.edu/aat/300019267>,
+        <http://vocab.getty.edu/aat/300019278> ;
     vra:hasTechnique <http://vocab.getty.edu/aat/300054608> ;
     vra:height [ a vra:QuantitativeValue ;
             vra:unitCode "MTR" ;
-            vra:value "34" ] ;
-    vra:length [ a vra:QuantitativeValue ;
-            vra:unitCode "MTR" ;
-            vra:value "130" ] ;
+            vra:value "6.7" ] ;
     vra:material [ a vra:Material ;
-            vra:name "stone; limestone" ] ;
-    vra:name "Chartres Cathedral"@en,
-        "Cathédrale Notre-Dame de Chartres"@fr,
-        "Notre-Dame de Chartres "@fr ;
+            vra:name "stone; sarsen (sandstone); bluestone" ] ;
+    vra:name "Stone Henge"@en,
+        "Stonehenge"@en ;
     vra:placeOfSite [ a vra:Place ;
             vra:containedIn <http://vocab.getty.edu/tgn/1000003>,
-                <http://vocab.getty.edu/tgn/1000070>,
-                <http://vocab.getty.edu/tgn/7002877>,
-                <http://vocab.getty.edu/tgn/7008267> ;
-            vra:description "Eure-et-Loir (department)" ;
-            vra:name "Chartres, Centre, France" ] ;
+                <http://vocab.getty.edu/tgn/7002445>,
+                <http://vocab.getty.edu/tgn/7008180>,
+                <http://vocab.getty.edu/tgn/7008591>,
+                <http://vocab.getty.edu/tgn/7011211> ;
+            vra:description "on the Salisbury Plain" ;
+            vra:name "Stonehenge (Wiltshire, England, United Kingdom)" ] ;
     vra:wasCreated [ a vra:Event ;
-            vra:endDate "1194" ;
-            vra:name "Creation" ;
-            vra:startDate "1194" ] .
+            vra:endDate "-1500" ;
+            vra:name "Inclusive" ;
+            vra:startDate "-3200" ] ;
+    vra:weight [ a vra:QuantitativeValue ;
+            vra:value "45.2" ] .
 
-<http://id.loc.gov/authorities/names/n81018544> a vra:Thing ;
-    vra:name "Mary, Blessed Virgin, Saint" .
+<http://id.loc.gov/authorities/subjects/sh85009013> a vra:Thing ;
+    vra:name "Astronomy,Ancient" .
 
-<http://purl.org/getty/vocab/ulan/French> vra:name "French" .
+<http://id.loc.gov/authorities/subjects/sh85130480> a vra:Thing ;
+    vra:name "Sun Rising and setting" .
+
+<http://purl.org/getty/vocab/ulan/British> vra:name "British" .
+
+<http://purl.org/getty/vocab/ulan/European> vra:name "European" .
 
 <http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept> a vra:Agent,
         vra:Person ;
     vra:name "unknown" .
 
-<http://vocab.getty.edu/aat/300020768> a vra:Intangible,
+<http://vocab.getty.edu/aat/300019267> a vra:Intangible,
         vra:StylePeriod ;
-    vra:name "Romanesque" .
+    vra:name "Neolithic" .
 
-<http://vocab.getty.edu/aat/300020775> a vra:Intangible,
+<http://vocab.getty.edu/aat/300019278> a vra:Intangible,
         vra:StylePeriod ;
-    vra:name "Gothic (Medieval)" .
+    vra:name "Late Bronze Age" .
 
 <http://vocab.getty.edu/aat/300054608> a vra:Intangible,
         vra:Technique ;
@@ -84,17 +100,26 @@
 <http://vocab.getty.edu/tgn/1000003> a vra:Continent,
         vra:Place ;
     vra:name "Europe" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=1000003&place=&nation=&prev_page=1&english=N&subjectid=1000003" .
+    vra:url """http://www.getty.edu/vow/TGNFullDisplay?find=1000003&place=&nation=&prev_page=1&english=N&subjectid=1000003
+		""".
 
-<http://vocab.getty.edu/tgn/1000070> a vra:Country,
+<http://vocab.getty.edu/tgn/7002445> a vra:Place ;
+    vra:name "England" ;
+    vra:url """http://www.getty.edu/vow/TGNFullDisplay?find=7002445&place=&nation=&prev_page=1&english=N&subjectid=7002445
+		""".
+
+<http://vocab.getty.edu/tgn/7008180> a vra:Place ;
+    vra:name "Wiltshire" ;
+    vra:url """http://www.getty.edu/vow/TGNFullDisplay?find=7008180&place=&nation=&prev_page=1&english=N&subjectid=7008180
+		""".
+
+<http://vocab.getty.edu/tgn/7008591> a vra:Country,
         vra:Place ;
-    vra:name "France" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=1000070&place=&nation=&prev_page=1&english=N&subjectid=1000070" .
+    vra:name "United Kingdom" ;
+    vra:url """http://www.getty.edu/vow/TGNFullDisplay?find=7008591&place=&nation=&prev_page=1&english=N&subjectid=7008591
+		""".
 
-<http://vocab.getty.edu/tgn/7002877> a vra:Place ;
-    vra:name "Centre" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7002877&place=&nation=&prev_page=1&english=N&subjectid=7002877" .
-
-<http://vocab.getty.edu/tgn/7008267> a vra:Place ;
-    vra:name "Chartres" ;
-    vra:url "http://www.getty.edu/vow/TGNFullDisplay?find=7008267&place=&nation=&prev_page=1&english=N&subjectid=7008267" .
+<http://vocab.getty.edu/tgn/7011211> a vra:Place ;
+    vra:name "Stonehenge" ;
+    vra:url """http://www.getty.edu/vow/TGNFullDisplay?find=7011211&place=&nation=&prev_page=1&english=N&subjectid=7011211
+		""".
