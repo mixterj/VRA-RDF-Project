@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!-- 
 Title: VRA Template
-Author: Jeff Mixter <http://www.linkedin.com/profile/view?id=183522525&trk=tab_pro>
+Author: VRA Oversight Committee
 Also see: 
 Description: This stylesheet can be used to convert VRA 4.0 XML formated records into RDF/XML.
 			 The records must confrom the the VRA 4.0 Restricted Schema in order to work with the stylesheet
