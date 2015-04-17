@@ -4,11 +4,10 @@ Title: VRA Template
 Author: VRA Oversight Committee
 Also see: 
 Description: This stylesheet can be used to convert VRA 4.0 XML formated records into RDF/XML.
-			 The records must confrom the the VRA 4.0 Restricted Schema in order to work with the stylesheet
+			 The records must conform the the VRA 4.0 Restricted Schema in order to work with the stylesheet
 Attribution-NonCommercial-ShareAlike 3.0 United States (cc) 2008-2010 <http://creativecommons.org/licenses/by-nc-sa/3.0/>
  -->
 <xsl:stylesheet version="1.0"
-xmlns:schema="http://purl.org/vra/"
 xmlns:foaf="http://xmlns.com/foaf/0.1/"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -703,14 +702,13 @@ exclude-result-prefixes="vc xsl">
 	<xsl:template match="vc:agent">
 		<vra:creator>
 		<rdf:Description>
-			<xsl:if test="vc:name/@vocab= 'ULAN'">
+			<xsl:if test="vc:name/@vocab= 'ULAN' and vc:name/@refid">
 					<xsl:attribute name="rdf:about">
-					<xsl:text>http://viaf.org/viaf/sourceID/JPG%7C</xsl:text>
+					<xsl:text>http://vocab.getty.edu/ulan/</xsl:text>
 					<xsl:value-of select="vc:name/@refid"/>
-					<xsl:text>#skos:Concept</xsl:text>
 				</xsl:attribute>
 			</xsl:if>
-			<xsl:if test="vc:name/@vocab= 'LCNAF'">
+			<xsl:if test="vc:name/@vocab= 'LCNAF' and vc:name/@refid">
 				<xsl:attribute name="rdf:about">
 					<xsl:text>http://id.loc.gov/authorities/names/</xsl:text>
 					<xsl:value-of select="translate(vc:name/@refid,' ','')"/>
@@ -776,6 +774,8 @@ exclude-result-prefixes="vc xsl">
    
    <!-- CreativeWork Culture template -->
 	<xsl:template match="vc:culturalContext">
+	<xsl:choose>
+		<xsl:when test="@vocab ='ULAN' and @refid">
 		<vra:culturalContext>
 			<rdf:Description>
 				<xsl:attribute name="rdf:about">
@@ -786,7 +786,44 @@ exclude-result-prefixes="vc xsl">
 					<xsl:value-of select="." />
 				</vra:name>
 			</rdf:Description>
-			</vra:culturalContext>
+		</vra:culturalContext>
+		</xsl:when>
+		<xsl:when test="@vocab ='AAT' and @refid">
+		<vra:culturalContext>
+			<rdf:Description>
+				<xsl:attribute name="rdf:about">
+					<xsl:text>http://vocab.getty.edu/aat/</xsl:text>
+					<xsl:value-of select="translate(.,' ', '')"/>
+				</xsl:attribute>
+				<vra:name>
+					<xsl:value-of select="." />
+				</vra:name>
+			</rdf:Description>
+		</vra:culturalContext>
+		</xsl:when>
+		<xsl:when test="@vocab ='LCSH' and @refid">
+		<vra:culturalContext>
+			<rdf:Description>
+				<xsl:attribute name="rdf:about">
+					<xsl:text>http://id.loc.gov/authorities/subjects/</xsl:text>
+					<xsl:value-of select="translate(.,' ', '')"/>
+				</xsl:attribute>
+				<vra:name>
+					<xsl:value-of select="." />
+				</vra:name>
+			</rdf:Description>
+		</vra:culturalContext>
+		</xsl:when>
+		<xsl:otherwise>
+		<vra:culturalContext>
+			<rdf:Description>
+				<vra:name>
+					<xsl:value-of select="." />
+				</vra:name>
+			</rdf:Description>
+		</vra:culturalContext>
+		</xsl:otherwise>		
+	</xsl:choose>
 	</xsl:template>
 
 	<!-- Date/Event templates -->
@@ -1027,6 +1064,11 @@ exclude-result-prefixes="vc xsl">
 
 <!-- Location templates -->	
 	<xsl:template match="vc:location[@type='repository']">
+		<xsl:if test ="vc:refid/@type='accession'">
+			<vra:serialNumber>
+				<xsl:value-of select="vc:refid"/>
+			</vra:serialNumber>
+		</xsl:if>
 		<vra:placeOfRepository>
 			<rdf:Description>
 				<rdf:type rdf:resource="http://purl.org/vra/Place" />
@@ -1193,6 +1235,28 @@ exclude-result-prefixes="vc xsl">
 		</vra:placeOfPerformance>
 	</xsl:template>
 	
+	<xsl:template match="vc:location[@type='creation']">
+		<vra:placeOfCreation>
+			<rdf:Description>
+				<rdf:type rdf:resource="http://purl.org/vra/Place" />
+				<xsl:apply-templates select="vc:name" mode="vra:Place"/>
+				<vra:name>
+					<xsl:value-of select="../vc:display"/>
+				</vra:name>
+				<vra:description>
+					<xsl:value-of select="../vc:notes"/>
+				</vra:description>
+			</rdf:Description>
+		</vra:placeOfCreation>
+	</xsl:template>
+	
+		
+	<xsl:template match="vc:location[@type='other']">
+		<rdfs:comment>
+			<xsl:text>This is a default value. Please modify the Transformation stylesheet so that the @type'other' template reflects your organizaitons specific use of it</xsl:text>
+		</rdfs:comment>
+	</xsl:template>
+	
 	<xsl:template match="vc:location[@type='site']">
 		<vra:placeOfSite>
 			<rdf:Description>
@@ -1211,13 +1275,13 @@ exclude-result-prefixes="vc xsl">
 	<xsl:template match="vc:name" mode="vra:Place">
 		<vra:containedIn>
 			<rdf:Description>
-				<xsl:if test="@vocab='TGN'">
+				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
 						<xsl:value-of select="normalize-space(@refid)"/>
 					</xsl:attribute>
 				</xsl:if>
-				<xsl:if test="@vocab='LCSH'">
+				<xsl:if test="@vocab='LCSH' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://id.loc.gov/authorities/subjects/</xsl:text>
 						<xsl:value-of select="translate(@refid,' ','')"/>
@@ -1232,14 +1296,6 @@ exclude-result-prefixes="vc xsl">
 				</xsl:if>
 				<xsl:if test="@extent='continent'">
 					<rdf:type rdf:resource="http://purl.org/vra/Continent" />
-				</xsl:if>
-				<xsl:if test="@vocab='TGN'">
-					<vra:url>
-						<xsl:text>http://www.getty.edu/vow/TGNFullDisplay?find=</xsl:text>
-						<xsl:value-of select="@refid"/>
-						<xsl:text>&amp;place=&amp;nation=&amp;prev_page=1&amp;english=N&amp;subjectid=</xsl:text>
-						<xsl:value-of select="@refid"/>
-					</vra:url>
 				</xsl:if>
 				<vra:name>
 					<xsl:value-of select="."/>
@@ -1270,7 +1326,7 @@ exclude-result-prefixes="vc xsl">
 	<xsl:template match="vc:material">	
 	<xsl:if test="string-length(.)&gt;0">	
 		<xsl:choose>
-			<xsl:when test="@vocab ='LCSAF'">
+			<xsl:when test="@vocab ='LCSAF' and @refid">
 				<vra:material>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1284,7 +1340,7 @@ exclude-result-prefixes="vc xsl">
 			</rdf:Description>
 			</vra:material>
 			</xsl:when>
-			<xsl:when test="@vocab ='LCNAF'">
+			<xsl:when test="@vocab ='LCNAF' and @refid">
 				<vra:material>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1298,7 +1354,7 @@ exclude-result-prefixes="vc xsl">
 			</rdf:Description>
 			</vra:material>
 			</xsl:when>
-			<xsl:when test="@vocab ='LCTGM'">
+			<xsl:when test="@vocab ='LCTGM' and @refid">
 				<vra:material>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1313,7 +1369,7 @@ exclude-result-prefixes="vc xsl">
 			</rdf:Description>
 			</vra:material>
 			</xsl:when>
-			<xsl:when test="@vocab ='AAT'">
+			<xsl:when test="@vocab ='AAT' and @refid">
 				<vra:material>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1327,11 +1383,11 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:material>
 			</xsl:when>
-			<xsl:when test="@vocab ='ULAN'">
+			<xsl:when test="@vocab ='ULAN' and @refid">
 				<vra:material>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
-						<xsl:text>http://vocab.getty.edu/aat/</xsl:text>
+						<xsl:text>http://vocab.getty.edu/ulan/</xsl:text>
 						<xsl:value-of select="@refid"/>
 					</xsl:attribute>
 					<rdf:type rdf:resource="http://purl.org/vra/Material" />
@@ -1341,7 +1397,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:material>
 			</xsl:when>
-			<xsl:when test="@vocab ='TGN'">
+			<xsl:when test="@vocab ='TGN' and @refid">
 				<vra:material>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1389,7 +1445,7 @@ exclude-result-prefixes="vc xsl">
 	
 	<xsl:template match="vc:stylePeriod">		
 		<xsl:choose>
-			<xsl:when test="@vocab ='LCSAF'">
+			<xsl:when test="@vocab ='LCSAF' and @refid">
 				<vra:hasStylePeriod>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1402,7 +1458,7 @@ exclude-result-prefixes="vc xsl">
 			</rdf:Description>
 			</vra:hasStylePeriod>
 			</xsl:when>
-			<xsl:when test="@vocab ='LCNAF'">
+			<xsl:when test="@vocab ='LCNAF' and @refid">
 				<vra:hasStylePeriod>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1415,7 +1471,7 @@ exclude-result-prefixes="vc xsl">
 			</rdf:Description>
 			</vra:hasStylePeriod>
 			</xsl:when>
-			<xsl:when test="@vocab ='LCTGM'">
+			<xsl:when test="@vocab ='LCTGM' and @refid">
 				<vra:hasStylePeriod>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1428,7 +1484,7 @@ exclude-result-prefixes="vc xsl">
 			</rdf:Description>
 			</vra:hasStylePeriod>
 			</xsl:when>
-			<xsl:when test="@vocab ='AAT'">
+			<xsl:when test="@vocab ='AAT' and @refid">
 				<vra:hasStylePeriod>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1441,11 +1497,11 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasStylePeriod>
 			</xsl:when>
-			<xsl:when test="@vocab ='ULAN'">
+			<xsl:when test="@vocab ='ULAN' and @refid">
 				<vra:hasStylePeriod>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
-						<xsl:text>http://vocab.getty.edu/aat/</xsl:text>
+						<xsl:text>http://vocab.getty.edu/ulan/</xsl:text>
 						<xsl:value-of select="@refid"/>
 					</xsl:attribute>
 					<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
@@ -1454,7 +1510,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasStylePeriod>
 			</xsl:when>
-			<xsl:when test="@vocab ='TGN'">
+			<xsl:when test="@vocab ='TGN' and @refid">
 				<vra:hasStylePeriod>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1498,7 +1554,7 @@ exclude-result-prefixes="vc xsl">
 	
 	<xsl:template match="vc:subject/vc:term">	 
 		<xsl:choose>	
-			<xsl:when test="@vocab = 'LCSAF'">
+			<xsl:when test="@vocab = 'LCSAF' and @refid">
 				<vra:about>
 				<rdf:Description>
 				<xsl:attribute name="rdf:about">
@@ -1525,7 +1581,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:about>
 			</xsl:when>
-			<xsl:when test="@vocab = 'LCNAF'">
+			<xsl:when test="@vocab = 'LCNAF' and @refid">
 				<vra:about>
 				<rdf:Description>
 				<xsl:attribute name="rdf:about">
@@ -1552,7 +1608,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:about>
 			</xsl:when>
-			<xsl:when test="@vocab = 'LCTGM'">
+			<xsl:when test="@vocab = 'LCTGM' and @refid">
 				<vra:about>
 				<rdf:Description>
 				<xsl:attribute name="rdf:about">
@@ -1579,7 +1635,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:about>
 			</xsl:when>
-			<xsl:when test="@vocab = 'TGN'">
+			<xsl:when test="@vocab = 'TGN' and @refid">
 				<vra:about>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1606,7 +1662,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:about>
 			</xsl:when>
-			<xsl:when test="@vocab = 'AAT'">
+			<xsl:when test="@vocab = 'AAT' and @refid">
 				<vra:about>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1633,11 +1689,11 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:about>
 			</xsl:when>
-			<xsl:when test="@vocab = 'ULAN'">
+			<xsl:when test="@vocab = 'ULAN' and @refid">
 				<vra:about>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
-						<xsl:text>http://vocab.getty.edu/aat/</xsl:text>
+						<xsl:text>http://vocab.getty.edu/ulan/</xsl:text>
 						<xsl:value-of select="@refid"/>
 					</xsl:attribute>
 					<xsl:choose>
@@ -1708,7 +1764,7 @@ exclude-result-prefixes="vc xsl">
 			
 	<xsl:template match="vc:technique">	 
 		<xsl:choose>	
-			<xsl:when test="@vocab = 'LCSAF'">
+			<xsl:when test="@vocab = 'LCSAF' and @refid">
 				<vra:hasTechnique>
 				<rdf:Description>
 				<xsl:attribute name="rdf:about">
@@ -1723,7 +1779,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasTechnique>
 			</xsl:when>
-			<xsl:when test="@vocab = 'LCNAF'">
+			<xsl:when test="@vocab = 'LCNAF' and @refid">
 				<vra:hasTechnique>
 				<rdf:Description>
 				<xsl:attribute name="rdf:about">
@@ -1738,7 +1794,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasTechnique>
 			</xsl:when>
-			<xsl:when test="@vocab = 'LCTGM'">
+			<xsl:when test="@vocab = 'LCTGM' and @refid">
 				<vra:hasTechnique>
 				<rdf:Description>
 				<xsl:attribute name="rdf:about">
@@ -1753,7 +1809,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasTechnique>
 			</xsl:when>
-			<xsl:when test="@vocab = 'TGN'">
+			<xsl:when test="@vocab = 'TGN' and @refid">
 				<vra:hasTechnique>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1768,7 +1824,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasTechnique>
 			</xsl:when>
-			<xsl:when test="@vocab = 'AAT'">
+			<xsl:when test="@vocab = 'AAT' and @refid">
 				<vra:hasTechnique>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
@@ -1783,11 +1839,11 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasTechnique>
 			</xsl:when>
-			<xsl:when test="@vocab = 'ULAN'">
+			<xsl:when test="@vocab = 'ULAN' and @refid">
 				<vra:hasTechnique>
 				<rdf:Description>
 					<xsl:attribute name="rdf:about">
-						<xsl:text>http://vocab.getty.edu/aat/</xsl:text>
+						<xsl:text>http://vocab.getty.edu/ulan/</xsl:text>
 						<xsl:value-of select="@refid"/>
 					</xsl:attribute>
 					<rdf:type rdf:resource="http://purl.org/vra/Intangible" />
@@ -2080,27 +2136,27 @@ exclude-result-prefixes="vc xsl">
 					<vra:value>
 						<xsl:value-of select="." />
 					</vra:value>
-					<xsl:if test="@unit = 'in²'">
+					<xsl:if test="@unit = 'inÂ²'">
 						<vra:unitCode>
 							<xsl:text>INK</xsl:text>
 						</vra:unitCode>
 					</xsl:if>
-					<xsl:if test="@unit = 'cm²'">
+					<xsl:if test="@unit = 'cmÂ²'">
 						<vra:unitCode>
 							<xsl:text>CMK</xsl:text>
 						</vra:unitCode>
 					</xsl:if>
-					<xsl:if test="@unit = 'ft²'">
+					<xsl:if test="@unit = 'ftÂ²'">
 						<vra:unitCode>
 							<xsl:text>FTK</xsl:text>
 						</vra:unitCode>
 					</xsl:if>
-					<xsl:if test="@unit = 'm²'">
+					<xsl:if test="@unit = 'mÂ²'">
 						<vra:unitCode>
 							<xsl:text>MTK</xsl:text>
 						</vra:unitCode>
 					</xsl:if>
-					<xsl:if test="@unit = 'yd²'">
+					<xsl:if test="@unit = 'ydÂ²'">
 						<vra:unitCode>
 							<xsl:text>YDK</xsl:text>
 						</vra:unitCode>
@@ -2332,7 +2388,7 @@ exclude-result-prefixes="vc xsl">
 	
 	<xsl:template match="vc:inscription">
 		<xsl:choose>
-			<xsl:when test="vc:author/@vocab = 'LCSAF'">
+			<xsl:when test="vc:author/@vocab = 'LCSAF' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
 					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
@@ -2373,7 +2429,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasInscription>
 			</xsl:when>
-			<xsl:when test="@vocab = 'LCNAF'">
+			<xsl:when test="@vocab = 'LCNAF' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
 					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
@@ -2414,7 +2470,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasInscription>
 			</xsl:when>
-			<xsl:when test="@vocab = 'LCTGM'">
+			<xsl:when test="@vocab = 'LCTGM' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
 					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
@@ -2455,7 +2511,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasInscription>
 			</xsl:when>
-			<xsl:when test="@vocab = 'TGN'">
+			<xsl:when test="@vocab = 'TGN' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
 					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
@@ -2496,7 +2552,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasInscription>
 			</xsl:when>
-			<xsl:when test="@vocab = 'AAT'">
+			<xsl:when test="@vocab = 'AAT' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
 					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
@@ -2537,7 +2593,7 @@ exclude-result-prefixes="vc xsl">
 				</rdf:Description>
 				</vra:hasInscription>
 			</xsl:when>
-			<xsl:when test="@vocab = 'ULAN'">
+			<xsl:when test="@vocab = 'ULAN' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
 					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
@@ -2566,7 +2622,7 @@ exclude-result-prefixes="vc xsl">
 					<vra:author>
 					<rdf:Description>
 							<xsl:attribute name="rdf:about">
-								<xsl:text>http://vocab.getty.edu/aat/</xsl:text>
+								<xsl:text>http://vocab.getty.edu/ulan/</xsl:text>
 								<xsl:value-of select="@refid"/>
 							</xsl:attribute>
 					<rdf:type rdf:resource="http://purl.org/vra/Agent" />	
@@ -2624,7 +2680,7 @@ exclude-result-prefixes="vc xsl">
 	</xsl:template>
 	
 	<xsl:template match="vc:worktype" mode="workType">
-		<xsl:if test="@vocab = 'AAT'">
+		<xsl:if test="@vocab = 'AAT' and @refid">
 			<rdf:type>
 				<xsl:attribute name="rdf:resource">
 					<xsl:text>http://vocab.getty.edu/aat/</xsl:text>
@@ -2632,7 +2688,7 @@ exclude-result-prefixes="vc xsl">
 				</xsl:attribute>
 			</rdf:type>
 		</xsl:if>
-		<xsl:if test="@vocab = 'ULAN'">
+		<xsl:if test="@vocab = 'ULAN' and @refid">
 			<rdf:type>
 				<xsl:attribute name="rdf:resource">
 					<xsl:text>http://vocab.getty.edu/ulan/</xsl:text>
@@ -2640,7 +2696,7 @@ exclude-result-prefixes="vc xsl">
 				</xsl:attribute>
 			</rdf:type>
 		</xsl:if>
-		<xsl:if test="@vocab = 'TGN'">
+		<xsl:if test="@vocab = 'TGN' and @refid">
 			<rdf:type>
 				<xsl:attribute name="rdf:resource">
 					<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -2648,7 +2704,7 @@ exclude-result-prefixes="vc xsl">
 				</xsl:attribute>
 			</rdf:type>
 		</xsl:if>
-		<xsl:if test="@vocab = 'LCSAF'">
+		<xsl:if test="@vocab = 'LCSAF' and @refid">
 			<rdf:type>
 				<xsl:attribute name="rdf:resource">
 					<xsl:text>http://id.loc.gov/authorities/subjects/</xsl:text>
@@ -2656,7 +2712,7 @@ exclude-result-prefixes="vc xsl">
 				</xsl:attribute>
 			</rdf:type>
 		</xsl:if>
-		<xsl:if test="@vocab = 'LCNAF'">
+		<xsl:if test="@vocab = 'LCNAF' and @refid">
 			<rdf:type>
 				<xsl:attribute name="rdf:resource">
 					<xsl:text>http://id.loc.gov/authorities/names/</xsl:text>
@@ -2664,7 +2720,7 @@ exclude-result-prefixes="vc xsl">
 				</xsl:attribute>	
 			</rdf:type>
 		</xsl:if>
-		<xsl:if test="@vocab = 'LCTGM'">
+		<xsl:if test="@vocab = 'LCTGM' and @refid">
 			<rdf:type>
 				<xsl:attribute name="rdf:resource">
 					<xsl:text>http://id.loc.gov/vocabulary/graphicMaterials/</xsl:text>
