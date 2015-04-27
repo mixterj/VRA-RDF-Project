@@ -24,7 +24,7 @@ on the VRA Core website (http://core.vraweb.org/examples/html/example003_full.ht
 <#3> a vra:CreativeWork,
         <http://vocab.getty.edu/aat/300006958>,
         <http://vocab.getty.edu/aat/300007595>,
-        <http://vocab.getty.edu/aat/300007680> ;
+        <http://vocab.getty.edu/aat/300007680> ; 
     vra:about <http://id.loc.gov/authorities/subjects/sh85009013>,
         <http://id.loc.gov/authorities/subjects/sh85130480> ;
     vra:creator <http://viaf.org/viaf/sourceID/JPG%7C500125274#skos:Concept> ;
