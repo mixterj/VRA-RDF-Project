@@ -1,3 +1,5 @@
+<!-- This Sample record comes from the VRA Core website (http://core.vraweb.org/examples/html/example004_full.html) -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <vra xmlns="http://www.vraweb.org/vracore4.htm"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
