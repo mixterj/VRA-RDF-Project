@@ -192,15 +192,15 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/locationOf">
     <rdfs:comment xml:lang="en">vra:location</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="http://purl.org/vra/CreativeWork"/>
           <owl:Class rdf:about="http://purl.org/vra/Event"/>
         </owl:unionOf>
       </owl:Class>
-    </rdfs:range>
+    </rdfs:domain>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/wasPublished">
     <rdfs:comment xml:lang="en">vra:date type published</rdfs:comment>
@@ -410,8 +410,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfPerformance">
     <rdfs:comment xml:lang="en">vra:location type performance</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/counterProofFor">
@@ -442,8 +442,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfSite">
     <rdfs:comment xml:lang="en">vra:location type site</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/hasContext">
@@ -459,8 +459,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/venueFor">
     <rdfs:comment xml:lang="en">vra:relation type venueFor</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/Work"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/Work"/>
     <rdfs:subPropertyOf>
       <owl:ObjectProperty rdf:about="http://purl.org/vra/isRelatedTo"/>
     </rdfs:subPropertyOf>
@@ -588,8 +588,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfDiscovery">
     <rdfs:comment xml:lang="en">vra:location type discovery</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/replicaOf">
@@ -644,14 +644,14 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/formerRepository">
     <rdfs:comment xml:lang="en">vra:location type formerRepository</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfInstallation">
     <rdfs:comment xml:lang="en">vra:location type installation</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/base">
@@ -703,8 +703,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfExhibition">
     <rdfs:comment xml:lang="en">vra:location type exhibition</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/pendantOf">
@@ -780,8 +780,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfCreation">
     <rdfs:comment xml:lang="en">vra:location type creation</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/reliefFor">
@@ -842,14 +842,14 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/formerSite">
     <rdfs:comment xml:lang="en">vra:location type formerSite</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfRepository">
     <rdfs:comment xml:lang="en">vra:location type repository</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/isRelatedTo">
@@ -883,8 +883,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfOwnership">
     <rdfs:comment xml:lang="en">vra:location type owner</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/inventoryLevel">
@@ -947,8 +947,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/formerOwner">
     <rdfs:comment xml:lang="en">vra:location type formerOwner </rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/wasDesigned">
@@ -962,8 +962,8 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/placeOfIntention">
     <rdfs:comment xml:lang="en">vra:location type intention</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vra/Place"/>
-    <rdfs:range rdf:resource="http://purl.org/vra/CreativeWork"/>
+    <rdfs:range rdf:resource="http://purl.org/vra/Place"/>
+    <rdfs:domain rdf:resource="http://purl.org/vra/CreativeWork"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vra/locationOf"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/manufacturer">
