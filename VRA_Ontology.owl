@@ -27,6 +27,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://rdfs.org/ns/void#DataSet">
     <rdfs:comment xml:lang="en">Used to represent a collection of VRA records.  derived from the vra:collection</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/vra/Continent">
     <rdfs:comment xml:lang="en">Continent</rdfs:comment>
@@ -54,6 +55,7 @@
   <owl:Class rdf:about="http://purl.org/vra/Intangible">
     <rdfs:comment xml:lang="en">intangible entities</rdfs:comment>
     <owl:equivalentClass rdf:resource="http://schema.org/Intangible"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/vra/Inscription">
     <rdfs:comment xml:lang="en">used to represent vra:Inscription</rdfs:comment>
@@ -138,6 +140,7 @@
   <owl:Class rdf:about="http://purl.org/vra/Agent">
     <rdfs:comment xml:lang="en">Used to describe the person or organization that was responsible for creating a vra:CreativeWork</rdfs:comment>
     <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/vra/Event">
     <rdfs:comment xml:lang="en">used to represent the timespan during what a CreativeWork was created, displayed, broadcast etc.  derived from the vra:date. Also used to represent a vra:Agent activityDate</rdfs:comment>
@@ -146,6 +149,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/vra/Material">
     <rdfs:comment xml:lang="en">vra:material</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:ObjectProperty rdf:about="http://purl.org/vra/planFor">
     <rdfs:comment xml:lang="en">vra:relation type planFor</rdfs:comment>
