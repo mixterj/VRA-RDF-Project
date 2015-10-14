@@ -84,7 +84,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/vra/QuantitativeValue">
     <rdfs:comment xml:lang="en">quantitative values</rdfs:comment>
-    <owl:equivalentClass rdf:resource="http://schema.org/QUantitativeValue"/>
+    <owl:equivalentClass rdf:resource="http://schema.org/QuantitativeValue"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/vra/StructuredValue"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/vra/Culture">
