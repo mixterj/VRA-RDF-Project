@@ -27,7 +27,7 @@ def parameters():
  
 ### Based on the input file variable parse the VRA XML and use the predefined XSLT_Stylesheet_official.xsl stylesheet to convert it into RDF/XML  
 def xsl(input):
-   transformfile = 'XSL/XSLT_Stylesheet.xsl'
+   transformfile = 'XSLT_Stylesheet_official.xsl'
    xml = ET.parse(input)
    xslt = ET.parse(transformfile)
    transform = ET.XSLT(xslt)
