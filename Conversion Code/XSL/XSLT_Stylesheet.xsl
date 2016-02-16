@@ -1058,7 +1058,7 @@ exclude-result-prefixes="vc xsl">
 	<!-- Description template -->
 	<xsl:template match="vc:description">
 		<vra:description>
-			<xsl:value-of select="." />
+			<xsl:value-of select="normalize-space(.)" />
 		</vra:description>
 	</xsl:template>
 
