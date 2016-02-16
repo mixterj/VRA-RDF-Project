@@ -1,6 +1,6 @@
 from __future__ import print_function
 import lxml.etree as ET
-import sys, os
+import sys
 import rdflib
 from rdflib import URIRef, Namespace, RDF, Graph, Literal, BNode, plugin, Variable
 import re
