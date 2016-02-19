@@ -11,6 +11,7 @@ In order to run the code you will need to have Python installed (preferably 2.7.
 You will also need to install 3 Python modules: LXML, RDFLIB and RDFLIB-JSONld. Below are instructions doing so on both Mac and Windows systems
 
 Mac:
+------
 
 1) Make sure Python is installed (is packaged with Mac OS X). If not install Python (https://www.python.org/downloads/)
 
@@ -25,6 +26,7 @@ Mac:
     pip install rdflib-jsonld
 	
 Windows:
+------
 
 1) Download Python 2.7.11 (https://www.python.org/downloads/windows/). Pip is already packaged with the install.
 
@@ -45,6 +47,7 @@ Windows:
     Windows 8 and 10 - http://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8
 	
 Using the transform code:
+------
 
 1) Clone the GitHub project and navigate to the /VRA-RDF-Project/Conversion Code directory
 
