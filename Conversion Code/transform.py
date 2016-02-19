@@ -9,6 +9,11 @@ from rdflib.plugin import register, Serializer
 from optparse import OptionParser
 register('json-ld', Serializer, 'rdflib_jsonld.serializer', 'JsonLDSerializer')
 
+### Title: VRA/RDF Transform code
+### Author: VRA Oversight Committee
+### Description: This stylesheet can be used to convert VRA 4.0 XML formated records into RDF/XML. The records must conform the the VRA 4.0 Restricted Schema in order to work with the stylesheet
+### Attribution-NonCommercial-ShareAlike 3.0 United States (cc) 2008-2010 <http://creativecommons.org/licenses/by-nc-sa/3.0/>
+
 ### Initiate the program and check/parse the command line variables
 def parameters():
    parser = OptionParser()
