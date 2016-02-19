@@ -13,11 +13,15 @@ You will also need to install 3 Python modules: LXML, RDFLIB and RDFLIB-JSONld. 
 Mac:
 
 Make sure Python is installed (is packaged with Mac OS X). If not install Python (https://www.python.org/downloads/)
+
 From the Terminal install Pip: 
+
     sudo easy_install pip
 From the Terminal install RDFLIB: 
+
     pip install rdflib
 From the Terminal install RDFLIB-JSONld: 
+
     pip install rdflib-jsonld
 	
 Windows:
