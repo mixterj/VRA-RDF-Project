@@ -34,9 +34,8 @@ Windows Setup:
 1. Download Python 2.7 (https://www.python.org/downloads/windows/). Pip is already packaged with the install.
 
 2. Set Python Path for Windows
-
-    Windows 7 - http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7
-    Windows 8 and 10 - http://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8
+  - Windows 7 - http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7
+  - Windows 8 and 10 - http://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8
 	
 Installing and Running the vra2rdf Application:
 ------
@@ -49,16 +48,16 @@ Installing and Running the vra2rdf Application:
 
 3. Run the vra2rdf transformation using these parameters.
 
-    `vra2rdf -i <inputfile> -s <desired RDF serialization>`
+    `vra2rdf -i <inputfile> -s <RDF serialization>`
 
-    Sample VRA XML input files are in data/sample/xml/, e.g., data/sample/xml/record1.xml
+    Sample VRA XML input files are in data/sample/xml/.
     
-    Acceptable serializations parameters are:
-
-    xml = RDF xml
+    An example request to serialize the VRA XML in record1.xml as json-ld:
     
-    json-ld = JSON-LD
+    `vra2rdf -i data/sample/xml/record1.xml -s json-ld`
     
-    nt = N-Triples
-    
-    n3 = Turtle
+4. Acceptable serializations parameters are:
+  * xml = RDF xml
+  * json-ld = JSON-LD
+  * nt = N-Triples
+  * n3 = Turtle
