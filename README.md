@@ -25,8 +25,7 @@ Mac Setup:
 
 1. Make sure Python is installed (is packaged with Mac OS X). If not install Python 2.7 (https://www.python.org/downloads/)
 2. From the Terminal install Pip: 
-
-    sudo easy_install pip
+  - `sudo easy_install pip`
 	
 Windows Setup:
 ------
