@@ -24,7 +24,7 @@ def parameters():
        print('please include a -i <inputfile> parameter. Use -h or --help for help')
        sys.exit(2)
    if not options.serialization:
-       print('please include a -f <serialization> parameter. Use -h or --help for help')
+       print('please include a -s <serialization> parameter. Use -h or --help for help')
        sys.exit(2)
    inputfile = (options.inputfile)
    serialization = (options.serialization)
