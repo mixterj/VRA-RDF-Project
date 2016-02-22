@@ -51,6 +51,9 @@ Getting Started:
     Acceptable serializations parameters are:
     
     xml = RDF xml
+    
     json-ld = JSON-LD
+    
     nt = N-Triples
+    
     n3 = Turtle
