@@ -55,7 +55,7 @@ Installing and Running the vra2rdf Application:
     
     `vra2rdf -i data/sample/xml/record1.xml -s json-ld`
     
-4. Acceptable serializations parameters are:
+4. Supported serialization parameters are:
   * xml = RDF xml
   * json-ld = JSON-LD
   * nt = N-Triples
