@@ -49,7 +49,7 @@ Getting Started:
     Sample VRA XML input files are in data/sample/xml/, e.g., data/sample/xml/record1.xml
     
     Acceptable serializations parameters are:
-    
+
     xml = RDF xml
     
     json-ld = JSON-LD
