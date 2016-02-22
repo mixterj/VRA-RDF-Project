@@ -51,12 +51,12 @@ Installing and Running the vra2rdf Application:
 
     Sample VRA XML input files are in data/sample/xml/.
     
-    An example request to serialize the VRA XML in record1.xml as json-ld:
+    For example, this will serialize the sample VRA XML in record1.xml as RDF JSON-LD:
     
     `vra2rdf -i data/sample/xml/record1.xml -s json-ld`
     
-4. Supported serialization parameters are:
-  * xml = RDF xml
+4. Supported RDF serialization parameters are:
+  * xml = RDF XML
   * json-ld = JSON-LD
   * nt = N-Triples
   * n3 = Turtle
