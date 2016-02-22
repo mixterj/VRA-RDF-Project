@@ -1,63 +1,58 @@
 VRA-RDF-Project
 ===============
-This project was initiated by members of the VRA Core Oversight Committee. The goal of the project is to develop a RDF Ontology for the VRA Core 4 data model. We have developed a draft ontology and have created an XSLT stylesheet that can convert existing VRA Core 4 compliant XML data into RDF/XML. We encourage people to try out the stylesheet and review the ontology. Your feedback will help us refine both the stylesheet as well as the ontology. 
+This project was initiated by members of the VRA Core Oversight Committee. The goal of the project is to develop an RDF Ontology for the VRA Core 4 data model. 
 
-Instructions:
+We have developed a draft ontology and have created an XSLT stylesheet that can convert existing VRA Core 4 compliant XML data into RDF/XML. 
+
+We encourage people to try out the stylesheet and review the ontology. Your feedback will help us refine both the stylesheet as well as the ontology. 
+
+VRA 2 RDF Transformation code:
 ===============
 
-Under the Conversion Code directory you will find a same VRA/XML Record (VraXmlSampleRecord.xml) and a Python script (transform.py).
+The Python application applies the XSLT transformation stylesheet to an XML source, producing a range of RDF serializaitons.
 
-In order to run the code you will need to have Python installed (preferably 2.7.XX but 3.XX should also work)
-You will also need to install 3 Python modules: LXML, RDFLIB and RDFLIB-JSONld. Below are instructions doing so on both Mac and Windows systems
+To run the application on your system, you will need to have Python installed (preferably 2.7.XX but 3.XX should also work).  The application depends on having three Python modules available: LXML, RDFLIB and RDFLIB-JSONld. 
 
-Mac:
+Initial Python setup instructions for Mac and Windows systems, and general information on getting started with the application, are provided below.
+
+Mac Setup:
 ------
 
-1) Make sure Python is installed (is packaged with Mac OS X). If not install Python (https://www.python.org/downloads/)
+1) Make sure Python is installed (is packaged with Mac OS X). If not install Python 2.7 (https://www.python.org/downloads/)
 
 2) From the Terminal install Pip: 
 
     sudo easy_install pip
-3) From the Terminal install RDFLIB: 
-
-    pip install rdflib
-4) From the Terminal install RDFLIB-JSONld: 
-
-    pip install rdflib-jsonld
 	
-Windows:
+Windows Setup:
 ------
 
-1) Download Python 2.7.11 (https://www.python.org/downloads/windows/). Pip is already packaged with the install.
+1) Download Python 2.7 (https://www.python.org/downloads/windows/). Pip is already packaged with the install.
 
-2) From the Command Line navigate to Python directory
-
-    cd C:\Python27
-3) From Command Line install RDFLIB
-
-    python -m pip install rdflib
-4) From Command Line install RDFLIB-JSON-ld
-
-    python -m pip install rdflib-jsonld
-5) Install LXML (https://pypi.python.org/pypi/lxml/3.5.0)
-
-6) Set Python Path for Windows
+2) Set Python Path for Windows
 
     Windows 7 - http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7
     Windows 8 and 10 - http://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8
 	
-Using the transform code:
+Getting Started:
 ------
 
-1) Clone the GitHub project and navigate to the /VRA-RDF-Project/Conversion Code directory
+1) Clone the GitHub project
 
-2) Run the transform.py script using these parameters.
+2) Run the setup.py installation to include Python dependencies
 
-    python transform.py -i <inputfile> -f <desired RDF serialization>
-3) Acceptable serializations parameters are:
+   python setup.py install
+
+3) Run the vra2rdf transformation using these parameters.
+
+    vra2rdf -i <inputfile> -s <desired RDF serialization>
+
+    Sample VRA XML input files are in data/sample/xml/, e.g., data/sample/xml/record1.xml
+    
+    Acceptable serializations parameters are:
 
     xml - RDF xml
-    jsonld - JSON-LD
+    json-ld - JSON-LD
     nt - N-Triples
     n3 - Turtle
 
