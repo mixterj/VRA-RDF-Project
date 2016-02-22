@@ -18,18 +18,17 @@ Initial Python setup instructions for Mac and Windows systems, and general infor
 Mac Setup:
 ------
 
-1) Make sure Python is installed (is packaged with Mac OS X). If not install Python 2.7 (https://www.python.org/downloads/)
-
-2) From the Terminal install Pip: 
+1. Make sure Python is installed (is packaged with Mac OS X). If not install Python 2.7 (https://www.python.org/downloads/)
+2. From the Terminal install Pip: 
 
     sudo easy_install pip
 	
 Windows Setup:
 ------
 
-1) Download Python 2.7 (https://www.python.org/downloads/windows/). Pip is already packaged with the install.
+1. Download Python 2.7 (https://www.python.org/downloads/windows/). Pip is already packaged with the install.
 
-2) Set Python Path for Windows
+2. Set Python Path for Windows
 
     Windows 7 - http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7
     Windows 8 and 10 - http://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8
@@ -37,22 +36,21 @@ Windows Setup:
 Getting Started:
 ------
 
-1) Clone the GitHub project
+1. Clone the GitHub project
 
-2) Run the setup.py installation to include Python dependencies
+2. Run the setup.py installation to include Python dependencies
 
    python setup.py install
 
-3) Run the vra2rdf transformation using these parameters.
+3. Run the vra2rdf transformation using these parameters.
 
-    vra2rdf -i <inputfile> -s <desired RDF serialization>
+``` vra2rdf -i <inputfile> -s <desired RDF serialization>
 
     Sample VRA XML input files are in data/sample/xml/, e.g., data/sample/xml/record1.xml
     
     Acceptable serializations parameters are:
-
-    xml - RDF xml
+``` xml - RDF xml
     json-ld - JSON-LD
     nt - N-Triples
     n3 - Turtle
-
+```
