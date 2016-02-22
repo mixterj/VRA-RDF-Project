@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Sample record comes from the VRA Core website (http://core.vraweb.org/examples/html/example004_full.html) -->
+<vra xmlns="http://www.vraweb.org/vracore4.htm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.vraweb.org/vracore4.htm http://www.loc.gov/standards/vracore/vra-strict.xsd">
+    <work id="w_6" source="Core 4 Sample Database (VCat)" refid="6">
+        <agentSet>
+            <display>Michelangelo Buonarroti (Italian architect, 1475-1564); Pope Leo X (Italian patron, 1475-1521)</display>
+            <notes/>
+            <agent>
+                <name vocab="ULAN" refid="500010654" type="personal">Buonarroti, Michelangelo</name>
+                <dates type="life">
+                    <earliestDate>1475</earliestDate>
+                    <latestDate>1564</latestDate>
+                </dates>
+                <culture>Italian</culture>
+                <role>architect</role>
+            </agent>
+            <agent>
+                <name vocab="ULAN" refid="500121783" type="personal">Leo X, Pope</name>
+                <dates type="life">
+                    <earliestDate>1475</earliestDate>
+                    <latestDate>1521</latestDate>
+                </dates>
+                <culture>Italian</culture>
+                <role>patron</role>
+            </agent>
+        </agentSet>
+        <culturalContextSet>
+            <culturalContext>Italian</culturalContext>
+        </culturalContextSet>
+        <dateSet>
+            <display>ca. 1517-1520 (design)</display>
+            <date type="design">
+                <earliestDate>1516</earliestDate>
+                <latestDate>1520</latestDate>
+            </date>
+        </dateSet>
+        <descriptionSet>
+            <display>Michelangelo's design of the facade went through three main phases, which can be identified in three drawings in the collection of Casa Buonarroti, nos. 45A, 47A and 43A. In all likelihood it was the clearly defined image in the last of these drawings that was translated into the large wooden model in Casa Buonarroti, which itself reflects the passage from the design stage to that of execution, as specified in the contract drawn up between Leo X and the artist on January 19, 1518. The model is 1:12 scale. The facade was never built.</display>
+            <description source="Casa Buonarroti [website]; http://www.casabuonarroti.it/ (accessed 3/2/2009)">Michelangelo's design of the facade went through three main phases, which can be identified in three drawings in the collection of Casa Buonarroti, nos. 45A, 47A and 43A. In all likelihood it was the clearly defined image in the last of these drawings that was translated into the large wooden model in Casa Buonarroti, which itself reflects the passage from the design stage to that of execution, as specified in the contract drawn up between Leo X and the artist on January 19, 1518. The model is 1:12 scale. The facade was never built.</description>
+        </descriptionSet>
+        <locationSet>
+            <display>Casa Buonarroti (Florence, Tuscany, Italy)</display>
+            <notes>Via Ghibellina 70
+</notes>
+            <location type="repository">
+                <name type="geographic" vocab="CCO" refid="" extent="site">Casa Buonarroti</name>
+                <name type="geographic" vocab="TGN" refid="7000457" extent="inhabited place">Florence</name>
+                <name type="geographic" vocab="TGN" refid="7009760" extent="region">Tuscany</name>
+                <name type="geographic" vocab="TGN" refid="1000080" extent="nation">Italy</name>
+                <name type="geographic" vocab="TGN" refid="1000003" extent="continent">Europe</name>
+            </location>
+        </locationSet>
+        <materialSet>
+            <display>poplar, cypress, pine and other wood; traces of white lead paint and gesso</display>
+            <notes/>
+            <material/>
+        </materialSet>
+        <measurementsSet>
+            <display>216 cm (height) x 283 cm (width) x 50 cm (depth)</display>
+            <notes/>
+            <measurements type="height" unit="cm">216</measurements>
+            <measurements type="width" unit="cm">283</measurements>
+            <measurements type="depth" unit="cm">50</measurements>
+        </measurementsSet>
+        <relationSet>
+            <display/>
+            <relation type="relatedTo" refid="6" relids="w_7" source="Core 4 Sample Database (VCat)">San Lorenzo, Florence</relation>
+        </relationSet>
+        <sourceSet>
+            <display>Core 4 Sample Database (VCat)</display>
+            <source>
+                <name>Core 4 Sample Database (VCat)</name>
+            </source>
+        </sourceSet>
+        <stylePeriodSet>
+            <display>Renaissance</display>
+            <stylePeriod vocab="AAT" refid="300021140">Renaissance</stylePeriod>
+        </stylePeriodSet>
+        <subjectSet>
+            <display>architectural exteriors; Artists' studios; models (representations); architectural modeling; construction models; carpentry; San Lorenzo (Florence, Italy)
+</display>
+            <notes/>
+            <subject>
+                <term type="descriptiveTopic" vocab="LCSAF" refid="sh 85008315">Artists' studios</term>
+            </subject>
+            <subject>
+                <term type="descriptiveTopic" vocab="AAT" refid="300047753">models (representations)</term>
+            </subject>
+        </subjectSet>
+        <techniqueSet>
+            <display>construction (assembling)</display>
+            <notes/>
+            <technique vocab="AAT" refid="300054608">construction (assembling)</technique>
+        </techniqueSet>
+        <titleSet>
+            <display>Wooden Model for the Façade of San Lorenzo, Florence</display>
+            <title type="descriptive" pref="true" xml:lang="en">Wooden Model for the Façade of San Lorenzo, Florence</title>
+        </titleSet>
+        <worktypeSet>
+            <display>models (representations)</display>
+            <worktype vocab="AAT" refid="300047753">model (representation)</worktype>
+        </worktypeSet>
+    </work>
+    <image id="i_105"
+        href="http://www.core.vraweb.org/examples/html/example004_full.html"
+        refid="105" source="VRA Core Oversight Committee, Core 4 Sample Records">
+        <dateSet>
+            <display>03/02/09 (other)</display>
+            <notes/>
+            <date/>
+        </dateSet>
+        <measurementsSet>
+            <display>250 kb</display>
+            <notes/>
+            <measurements/>
+        </measurementsSet>
+        <relationSet>
+            <relation type="imageOf" refid="6" source="Core 4 Sample Database (VCat)"/>
+        </relationSet>
+        <rightsSet>
+            <display>undetermined</display>
+            <rights/>
+        </rightsSet>
+        <sourceSet>
+            <display>Casa Buonarroti [website]; http://www.casabuonarroti.it/</display>
+            <source>
+                <name/>
+                <refid type="URI">http://www.casabuonarroti.it/</refid>
+            </source>
+        </sourceSet>
+        <techniqueSet>
+            <display>digital imaging</display>
+            <notes/>
+            <technique/>
+        </techniqueSet>
+        <titleSet>
+            <display>Overall facade view of model</display>
+            <title type="generalView">Overall facade view of model</title>
+        </titleSet>
+        <worktypeSet>
+            <display>digital image</display>
+            <notes/>
+            <worktype/>
+        </worktypeSet>
+    </image>
+    <work id="w_7" source="Core 4 Sample Database (VCat)" refid="7">
+        <agentSet>
+            <display>attributed to Filippo Brunelleschi (Italian architect, 1377-1446); Michelozzo di Bartolomeo (Italian architect, 1396-1472)</display>
+            <notes/>
+            <agent>
+                <name vocab="ULAN" refid="500018169" type="personal">Brunelleschi, Filippo</name>
+                <dates type="life">
+                    <earliestDate>1377</earliestDate>
+                    <latestDate>1446</latestDate>
+                </dates>
+                <culture>Italian</culture>
+                <role>architect</role>
+                <attribution>attributed to</attribution>
+            </agent>
+            <agent>
+                <name vocab="ULAN" refid="500032603" type="personal">Michelozzo di Bartolomeo</name>
+                <dates type="life">
+                    <earliestDate>1396</earliestDate>
+                    <latestDate>1472</latestDate>
+                </dates>
+                <culture>Italian</culture>
+                <role>architect</role>
+            </agent>
+        </agentSet>
+        <culturalContextSet>
+            <culturalContext>Italian</culturalContext>
+        </culturalContextSet>
+        <dateSet>
+            <display>begun 1418- ca. 1700 (inclusive)</display>
+            <date type="inclusive">
+                <earliestDate>1418</earliestDate>
+                <latestDate>1750</latestDate>
+            </date>
+        </dateSet>
+        <descriptionSet>
+            <display>The titular church of the Medici family, San Lorenzo is regarded by many as the quintessential Renaissance church. The rebuilding of the old Romanesque church of San Lorenzo, originally consecrated by St Ambrose in the 4th century, was largely carried out in the 15th century, with additions in the 16th and 17th.</display>
+            <description source="Grove Art Online; http://www.oxfordartonline.com (accessed 3/3/2009)">The titular church of the Medici family, San Lorenzo is regarded by many as the quintessential Renaissance church. The rebuilding of the old Romanesque church of San Lorenzo, originally consecrated by St Ambrose in the 4th century, was largely carried out in the 15th century, with additions in the 16th and 17th.</description>
+        </descriptionSet>
+        <locationSet>
+            <display>San Lorenzo (Florence, Tuscany, Italy)</display>
+            <location type="site">
+                <name type="geographic" vocab="DOA" refid="" extent="building">San Lorenzo</name>
+                <name type="geographic" vocab="TGN" refid="7000457" extent="inhabited place">Florence</name>
+                <name type="geographic" vocab="TGN" refid="7009760" extent="region">Tuscany</name>
+                <name type="geographic" vocab="TGN" refid="1000080" extent="nation">Italy</name>
+                <name type="geographic" vocab="TGN" refid="1000003" extent="continent">Europe</name>
+            </location>
+        </locationSet>
+        <materialSet>
+            <display>stone; marble; pietra serena</display>
+            <notes/>
+            <material/>
+        </materialSet>
+        <sourceSet>
+            <display>Core 4 Sample Database (VCat)</display>
+            <source>
+                <name>Core 4 Sample Database (VCat)</name>
+            </source>
+        </sourceSet>
+        <stylePeriodSet>
+            <display>Renaissance</display>
+            <stylePeriod vocab="AAT" refid="300021140">Renaissance</stylePeriod>
+        </stylePeriodSet>
+        <subjectSet>
+            <display>architectural exteriors; architectural interiors; rulers and leaders; Medici family</display>
+            <notes/>
+            <subject>
+                <term type="familyName" vocab="ULAN" refid="500114961">Medici family</term>
+            </subject>
+        </subjectSet>
+        <techniqueSet>
+            <display>construction (assembling)</display>
+            <notes/>
+            <technique vocab="AAT" refid="300054608">construction (assembling)</technique>
+        </techniqueSet>
+        <titleSet>
+            <display>San Lorenzo, Florence</display>
+            <title type="cited" pref="true" xml:lang="en">San Lorenzo, Florence</title>
+            <title type="cited" pref="false" xml:lang="it">Basilica di San Lorenzo</title>
+        </titleSet>
+        <worktypeSet>
+            <display>buildings; basilicas; buildings; religious buildings; churches</display>
+            <worktype vocab="AAT" refid="300007466">church</worktype>
+            <worktype vocab="AAT" refid="300170443">basilica</worktype>
+        </worktypeSet>
+    </work>
+</vra>

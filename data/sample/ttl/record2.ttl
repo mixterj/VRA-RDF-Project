@@ -1,0 +1,91 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix library: <http://purl.org/library/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vra: <http://purl.org/vra/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#119> a vra:ImageObject ;
+    dcterms:rights [ rdfs:label "© Davis Art Images" ] ;
+    vra:contentSize "18 MB" ;
+    vra:hasTechnique [ a vra:Intangible,
+                vra:Technique ;
+            vra:name "digital imaging" ] ;
+    vra:imageOf <#16> ;
+    vra:name "General view of excavations" .
+
+<#16> a vra:CreativeWork,
+        <http://vocab.getty.edu/aat/300000833>,
+        <http://vocab.getty.edu/aat/300266151> ;
+    vra:about <http://vocab.getty.edu/aat/300054328>,
+        <http://vocab.getty.edu/tgn/7030347> ;
+    vra:creator <http://vocab.getty.edu/ulan/500125274> ;
+    vra:culturalContext [ vra:name "Roman" ],
+        [ vra:name "Samnite" ] ;
+    vra:dateCreated "79 CE (destruction); ca. 525 BCE-79 CE (inclusive)" ;
+    vra:description "Roman site in southern Italy, located 24 km south-east of Naples, destroyed by an eruption of Mt Vesuvius. Vesuvius began to erupt in the late morning of the 24 August 79 CE, and by the end of the day some 2 m of ash had fallen on the town. The first 3 m also contain lava pebbles (lapilli), followed by layers of pumice, the solidified volcanic magma. Pompeii ultimately lay buried under some 4 m of debris. The city was undisturbed for some 1700 years until excavations in the mid-18th century following the discovery of Herculaneum, about 15 km further up the coast. Pompeii’s architectural development can be divided into three phases that also reflect the political evolution of the city: the Pre-Samnite period (525-425 BCE), the Samnite period (425-80 BCE) and the Roman phase (80 BCE-79 CE); the last may be further subdivided by the establishment of the Roman Empire under Augustus in 30 BC and by an earlier earthquake of 62 CE." ;
+    vra:hasStylePeriod <http://vocab.getty.edu/aat/300020541>,
+        <http://vocab.getty.edu/aat/300020607> ;
+    vra:hasTechnique <http://vocab.getty.edu/aat/300054608> ;
+    vra:length [ a vra:QuantitativeValue ;
+            vra:unitCode "MTR" ;
+            vra:value "157" ] ;
+    vra:name "Pompeii [archaeological site]"@en,
+        "Pompeii"@la ;
+    vra:placeOfSite [ a vra:Place ;
+            vra:containedIn <http://vocab.getty.edu/tgn/1000003>,
+                <http://vocab.getty.edu/tgn/1000080>,
+                <http://vocab.getty.edu/tgn/7003005>,
+                <http://vocab.getty.edu/tgn/7004658> ;
+            vra:description "24 km south-east of Naples" ;
+            vra:name "Pompeii, Campania, Italy" ] ;
+    vra:wasCreated [ a vra:Event ;
+            vra:endDate "79" ;
+            vra:name "Inclusive" ;
+            vra:startDate "-525" ] ;
+    vra:wasDestroyed [ a vra:Event ;
+            vra:endDate "79" ;
+            vra:name "Destruction" ;
+            vra:startDate "-525" ] ;
+    vra:width [ a vra:QuantitativeValue ;
+            vra:unitCode "MTR" ;
+            vra:value "35" ] .
+
+<http://vocab.getty.edu/aat/300020541> a vra:Intangible,
+        vra:StylePeriod ;
+    vra:name "Imperial (Roman)" .
+
+<http://vocab.getty.edu/aat/300020607> a vra:Intangible,
+        vra:StylePeriod ;
+    vra:name "First Style" .
+
+<http://vocab.getty.edu/aat/300054328> a vra:Thing ;
+    vra:name "archaeology" .
+
+<http://vocab.getty.edu/aat/300054608> a vra:Intangible,
+        vra:Technique ;
+    vra:name "construction (assembling)" .
+
+<http://vocab.getty.edu/tgn/1000003> a vra:Continent,
+        vra:Place ;
+    vra:name "Europe" .
+
+<http://vocab.getty.edu/tgn/1000080> a vra:Country,
+        vra:Place ;
+    vra:name "Italy" .
+
+<http://vocab.getty.edu/tgn/7003005> a vra:Place ;
+    vra:name "Campania" .
+
+<http://vocab.getty.edu/tgn/7004658> a vra:Place ;
+    vra:name "Pompeii" .
+
+<http://vocab.getty.edu/tgn/7030347> a vra:Thing ;
+    vra:name "Roman Empire" .
+
+<http://vocab.getty.edu/ulan/500125274> a vra:Agent,
+        vra:Person ;
+    vra:name "unknown" .

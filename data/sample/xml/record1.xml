@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Sample record comes from the VRA Core website (http://core.vraweb.org/examples/html/example003_full.html) -->
+<vra xmlns="http://www.vraweb.org/vracore4.htm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.vraweb.org/vracore4.htm http://www.vraweb.org/projects/vracore4/vra-4.0-restricted.xsd">
+
+	<work id="w_3" source="Core 4 Sample Database (VCat)" refid="3">
+
+		<agentSet>
+
+			<display>unknown (European)</display>
+
+			<notes />
+
+			<agent>
+
+				<name vocab="ULAN" refid="500125274" type="personal">unknown</name>
+
+			</agent>
+
+		</agentSet>
+
+		<culturalContextSet>
+
+			<culturalContext>British</culturalContext>
+
+			<culturalContext>European</culturalContext>
+
+		</culturalContextSet>
+
+		<dateSet>
+
+			<display>ca. 3200- ca. 1600 BCE (inclusive)</display>
+
+			<notes>Most recent phase of activity dates to ca. 1550 BCE.</notes>
+
+			<date type="inclusive">
+
+				<earliestDate>-3200</earliestDate>
+
+				<latestDate>-1500</latestDate>
+
+			</date>
+
+		</dateSet>
+
+		<descriptionSet>
+
+			<description>Visitors see today the remains of the final stage of
+				Stonehenge, a prehistoric temple used as a place of worship and
+				burial. In its first stage it was a large earthwork--"henge"--a bank
+				and ditch enclosing the Aubrey holes (named after their 17th century
+				discoverer) arranged in a circle. Later (around 2100 BCE) 80
+				bluestones were brought from the Preseli mountains in Wales and
+				arranged in a double circle in the center. Somewhat later sarsen
+				stones were arranged in an outer circle with continuous lintels and
+				five trilithons were arranged in a horseshoe, the axis of which
+				pointed to the midsummer sunrise. Even later (1550 BCE) the
+				bluestones were rearranged in the horseshoe and circle.
+
+			</description>
+
+		</descriptionSet>
+
+		<locationSet>
+
+			<display>Stonehenge (Wiltshire, England, United Kingdom)</display>
+
+			<notes>on the Salisbury Plain</notes>
+
+			<location type="site">
+
+				<name type="geographic" vocab="TGN" refid="7011211" extent="site">Stonehenge</name>
+
+				<name type="geographic" vocab="TGN" refid="7008180" extent="county">Wiltshire</name>
+
+				<name type="geographic" vocab="TGN" refid="7002445" extent="country">England</name>
+
+				<name type="geographic" vocab="TGN" refid="7008591" extent="nation">United
+					Kingdom</name>
+
+				<name type="geographic" vocab="TGN" refid="1000003" extent="continent">Europe</name>
+
+			</location>
+
+		</locationSet>
+
+		<materialSet>
+
+			<display>stone; sarsen (sandstone); bluestone</display>
+
+			<notes />
+
+			<material />
+
+		</materialSet>
+
+		<measurementsSet>
+
+			<display>29.7 m (diameter); 6.7 m (height, tallest stone); 45.2 ton
+				(weight, largest stone)</display>
+
+			<notes />
+
+			<measurements type="diameter" unit="m">29.7</measurements>
+
+			<measurements type="height" unit="m" extent="tallest stone">6.7</measurements>
+
+			<measurements type="weight" unit="ton" extent="largest stone">45.2</measurements>
+
+		</measurementsSet>
+
+		<sourceSet>
+
+			<display>Digital Imaging Project; Mary Ann Sullivan, Bluffton
+				University; http://www.bluffton.edu/~sullivanm/ (accessed 2/23/2009)</display>
+
+			<notes />
+
+			<source />
+
+		</sourceSet>
+
+		<stylePeriodSet>
+
+			<display>Late Bronze Age; Neolithic</display>
+
+			<stylePeriod vocab="AAT" refid="300019278">Late Bronze Age</stylePeriod>
+
+			<stylePeriod vocab="AAT" refid="300019267">Neolithic</stylePeriod>
+
+		</stylePeriodSet>
+
+		<subjectSet>
+
+			<display>death or burial; timekeeping; Astronomy, Ancient; Sun Rising
+				and setting; prehistoric stone circle; megaliths; lunar temple;
+				solar temple; standing stones; religion and mythology; ceremonial
+				site; post-and-lintel </display>
+
+			<notes />
+
+			<subject>
+
+				<term type="descriptiveTopic" vocab="LCSAF" refid="sh 85130480">Sun Rising
+					and setting</term>
+
+			</subject>
+
+			<subject>
+
+				<term type="descriptiveTopic" vocab="LCSAF" refid="sh 85009013 ">Astronomy,
+					Ancient</term>
+
+			</subject>
+
+		</subjectSet>
+
+		<techniqueSet>
+
+			<display>construction (assembling)</display>
+
+			<notes />
+
+			<technique vocab="AAT" refid="300054608">construction (assembling)</technique>
+
+		</techniqueSet>
+
+		<titleSet>
+
+			<display>Stonehenge</display>
+
+			<title type="cited" pref="true" xml:lang="en">Stonehenge</title>
+
+			<title type="cited" pref="false" xml:lang="en">Stone Henge</title>
+
+		</titleSet>
+
+		<worktypeSet>
+
+			<display>buildings; religious buildings; temples; buildings; research
+				buildings; observatories; built works; monuments</display>
+
+			<worktype vocab="AAT" refid="300007595">temple</worktype>
+
+			<worktype vocab="AAT" refid="300007680">observatory</worktype>
+
+			<worktype vocab="AAT" refid="300006958">monument</worktype>
+
+		</worktypeSet>
+
+	</work>
+
+	<image id="i_102" href="http://aal.ucsd.edu/vracore4/example003.html"
+		refid="102" source="VRA Data Standards Committee, Core 4 Sample Records">
+
+		<agentSet>
+
+			<display>Sullivan, Mary Ann</display>
+
+			<notes />
+
+			<agent />
+
+		</agentSet>
+
+		<measurementsSet>
+
+			<display>18 MB</display>
+
+			<notes />
+
+			<measurements />
+
+		</measurementsSet>
+
+		<relationSet>
+
+			<relation type="imageOf" refid="3"
+				source="Core 4 Sample Database (VCat)" />
+
+		</relationSet>
+
+		<rightsSet>
+
+			<display>© Mary Ann Sullivan</display>
+
+			<rights />
+
+		</rightsSet>
+
+		<sourceSet>
+
+			<display>Digital Imaging Project; Mary Ann Sullivan, Bluffton
+				University; http://www.bluffton.edu/~sullivanm/</display>
+
+			<source>
+
+				<name />
+
+				<refid type="URI">http://www.bluffton.edu/~sullivanm/</refid>
+
+			</source>
+
+		</sourceSet>
+
+		<subjectSet>
+
+			<display>trilithons, lintels</display>
+
+			<notes />
+
+			<subject>
+
+				<term />
+
+			</subject>
+
+		</subjectSet>
+
+		<techniqueSet>
+
+			<display>digital imaging</display>
+
+			<notes />
+
+			<technique />
+
+		</techniqueSet>
+
+		<titleSet>
+
+			<display>Detail of center axis</display>
+
+			<title type="partialView">Detail of center axis</title>
+
+		</titleSet>
+
+		<worktypeSet>
+
+			<display>digital image</display>
+
+			<notes />
+
+			<worktype />
+
+		</worktypeSet>
+
+	</image>
+
+</vra>
