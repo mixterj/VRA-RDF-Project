@@ -44,13 +44,13 @@ Getting Started:
 
 3. Run the vra2rdf transformation using these parameters.
 
-``` vra2rdf -i <inputfile> -s <desired RDF serialization>
+    `vra2rdf -i <inputfile> -s <desired RDF serialization>`
 
     Sample VRA XML input files are in data/sample/xml/, e.g., data/sample/xml/record1.xml
     
     Acceptable serializations parameters are:
-``` xml - RDF xml
-    json-ld - JSON-LD
-    nt - N-Triples
-    n3 - Turtle
-```
+    
+    ..* xml = RDF xml
+    ..* json-ld = JSON-LD
+    ..* nt = N-Triples
+    ..* n3 = Turtle
