@@ -1,5 +1,6 @@
 VRA-RDF-Project
 ===============
+
 This project was initiated by members of the VRA Core Oversight Committee. The goal of the project is to develop an RDF Ontology for the VRA Core 4 data model. 
 
 We have developed a draft ontology and have created an XSLT stylesheet that can convert existing VRA Core 4 compliant XML data into RDF/XML. We encourage people to try out the stylesheet and review the ontology. Your feedback will help us refine both the stylesheet as well as the ontology. 
@@ -8,14 +9,16 @@ We have developed a draft ontology and have created an XSLT stylesheet that can 
 
 [The XSLT Stylesheet](https://raw.githubusercontent.com/mixterj/VRA-RDF-Project/b3aebd228171666d4516dce2ff025a493e08fedd/data/xsl/vra2rdf.xsl "View the XSLT stylesheet")
 
-VRA 2 RDF Transformation code:
+This project also includes a Python application, "vra2rdf", which applies the XSLT stylesheet to VRA XML sources to produce serialized RDF.
+
+The vra2rdf application
 ===============
 
-The Python application applies the XSLT transformation stylesheet to an XML source, producing a range of RDF serializaitons.
+The vra2rdf Python application applies the XSLT transformation stylesheet to a VRA XML source, producing a range of RDF serializations.
 
-To run the application on your system, you will need to have Python installed (preferably 2.7.XX but 3.XX should also work).  The application depends on having three Python modules available: LXML, RDFLIB and RDFLIB-JSONld. 
+To run the application on your system, you will need to have Python installed (preferably 2.7.XX but 3.XX should also work).  The application depends on having three Python modules available: LXML, RDFLIB and RDFLIB-JSONld.  These should be installed by running the setup.py install script described below. 
 
-Initial Python setup instructions for Mac and Windows systems, and general information on getting started with the application, are provided below.
+In addition, some Python setup instructions for Mac and Windows systems are provided below.
 
 Mac Setup:
 ------
@@ -35,14 +38,14 @@ Windows Setup:
     Windows 7 - http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7
     Windows 8 and 10 - http://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8
 	
-Getting Started:
+Installing and Running the vra2rdf Application:
 ------
 
-1. Clone the GitHub project
+1. Clone this GitHub project
 
 2. Run the setup.py installation to include Python dependencies
 
-   python setup.py install
+   `python setup.py install`
 
 3. Run the vra2rdf transformation using these parameters.
 
