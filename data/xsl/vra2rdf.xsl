@@ -54,7 +54,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'imageIs'">
 				<vra:hasImage>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork"/>
 					</rdf:Description>
 				</vra:hasImage>
 			</xsl:if>
