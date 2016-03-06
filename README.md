@@ -26,6 +26,13 @@ Mac Setup:
 1. Make sure Python is installed (is packaged with Mac OS X). If not install Python 2.7 (https://www.python.org/downloads/)
 2. From the Terminal install Pip: 
   - `sudo easy_install pip`
+3. From the terminal install rdflib package
+  - `sudo pip install rdflib`	
+4. From the terminal install rdflib-jsonld
+  - `sudo pip install rdflib-jsonld`
+5. From the terminal install lxml
+  - `sudo pip install lxml`
+
 	
 Windows Setup:
 ------
@@ -35,6 +42,12 @@ Windows Setup:
 2. Set Python Path for Windows
   - Windows 7 - http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7
   - Windows 8 and 10 - http://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8
+3. From the DOS command prompt install rdflib package
+  - `sudo pip install rdflib`	
+4. From the DOS command prompt install rdflib-jsonld
+  - `sudo pip install rdflib-jsonld`
+5. From the DOS command prompt install lxml
+  - `sudo pip install lxml`
 	
 Installing and Running the vra2rdf Application:
 ------
