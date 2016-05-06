@@ -5,7 +5,7 @@ This project was initiated by members of the VRA Core Oversight Committee. The g
 
 We have developed a draft ontology and have created an XSLT stylesheet that can convert existing VRA Core 4 compliant XML data into RDF/XML. We encourage people to try out the stylesheet and review the ontology. Your feedback will help us refine both the stylesheet as well as the ontology. 
 
-[The VRA Ontology](http://www.essepuntato.it/lode/https://s3.amazonaws.com/VRA/Ontology/VRA_OntologyRevised.owl "View the VRA Ontology")
+[The VRA Ontology](http://purl.org/vra/ "View the VRA Ontology")
 
 [The XSLT Stylesheet](https://raw.githubusercontent.com/mixterj/VRA-RDF-Project/b3aebd228171666d4516dce2ff025a493e08fedd/data/xsl/vra2rdf.xsl "View the XSLT stylesheet")
 
