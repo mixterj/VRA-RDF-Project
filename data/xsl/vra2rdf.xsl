@@ -41,328 +41,328 @@ exclude-result-prefixes="vc xsl">
 	</xsl:template>
 	<xsl:template match="vc:work">
 		<rdf:Description rdf:about="#{@refid}">
-		<rdf:type rdf:resource="http://purl.org/vra/CreativeWork"/>
+		<rdf:type rdf:resource="http://purl.org/vra/Work"/>
 			<xsl:apply-templates select="vc:worktypeSet" mode="workType"/>
 			<xsl:apply-templates />
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'imageOf'">
 				<vra:imageOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork"/>
+						<rdf:type rdf:resource="http://purl.org/vra/Work"/>
 					</rdf:Description>
 				</vra:imageOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'imageIs'">
 				<vra:hasImage>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork"/>
+						<rdf:type rdf:resource="http://purl.org/vra/Work"/>
 					</rdf:Description>
 				</vra:hasImage>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'cartoonFor'">
 				<vra:cartoonFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:cartoonFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'cartoonIs'">
 				<vra:hasCartoon>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasCartoon>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'componentOf'">
 				<vra:componentOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:componentOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'componentIs'">
 				<vra:hasComponent>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasComponent>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'copyAfter'">
 				<vra:copyOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:copyOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'copyIs'">
 				<vra:hasCopy>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasCopy>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'counterProofFor'">
 				<vra:counterProofFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:counterProofFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'counterProofIs'">
 				<vra:hasCounterProof>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasCounterProof>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'depicts'">
 				<vra:depicts>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:depicts>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'depictedIn'">
 				<vra:depictedIn>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:depictedIn>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'derivedFrom'">
 				<vra:derivedFrom>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:derivedFrom>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'sourceFor'">
 				<vra:sourceFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:sourceFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'designedFor'">
 				<vra:designedFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:designedFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'contextIs'">
 				<vra:hasContext>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasContext>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'exhibitedAt'">
 				<vra:exhibitedAt>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:exhibitedAt>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'venueFor'">
 				<vra:venueFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:venueFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'facsimileOf'">
 				<vra:facsimileOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:facsimileOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'facsimileIs'">
 				<vra:hasFacsimile>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasFacsimile>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'formerlyPartOf'">
 				<vra:formerlyPartOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:formerlyPartOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'formerlyLargerContextFor'">
 				<vra:formerlyLargerContextFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:formerlyLargerContextFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'mateOf'">
 				<vra:imageOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:imageOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'modelFor'">
 				<vra:imageOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:imageOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'modelIs'">
 				<vra:hasModel>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasModel>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'largerContextFor'">
 				<vra:largerContextFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:largerContextFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'partOf'">
 				<vra:partOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:partOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'partnerInSetWith'">
 				<vra:partnerInSetWith>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:partnerInSetWith>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'pendantOf'">
 				<vra:pendantOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:pendantOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'planFor'">
 				<vra:planFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:planFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'planIs'">
 				<vra:hasPlan>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasPlan>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'prepatoryFor'">
 				<vra:prepatoryFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:prepatoryFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'basedOn'">
 				<vra:basedOn>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:basedOn>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'printingPlateFor'">
 				<vra:printingPlateFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:printingPlateFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'printingPlateIs'">
 				<vra:hasPrintingPlate>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasPrintingPlate>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'prototypeFor'">
 				<vra:prototypeFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:prototypeFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'prototypeIs'">
 				<vra:hasPrototype>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasPrototype>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'relatedTo'">
 				<vra:isRelatedTo>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:isRelatedTo>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'reliefFor'">
 				<vra:reliefFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:reliefFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'impressionIs'">
 				<vra:hasImpression>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasImpression>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'replicaOf'">
 				<vra:replicaOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:replicaOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'replicaIs'">
 				<vra:hasReplica>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasReplica>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'studyFor'">
 				<vra:studyFor>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:studyFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'studyIs'">
 				<vra:hasStudy>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasStudy>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'versionOf'">
 				<vra:versionOf>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:versionOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'versionIs'">
 				<vra:hasVersion>
 					<rdf:Description rdf:about="#{translate(vc:relationSet/vc:relation/@relids, 'w_', '')}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasVersion>
 			</xsl:if>
@@ -376,322 +376,322 @@ exclude-result-prefixes="vc xsl">
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'imageOf'">
 				<vra:imageOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:imageOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'imageIs'">
 				<vra:hasImage>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasImage>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'cartoonFor'">
 				<vra:cartoonFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:cartoonFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'cartoonIs'">
 				<vra:hasCartoon>
 					<rdf:Description rdf:about="#vc:relationSet/vc:relation/{@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasCartoon>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'componentOf'">
 				<vra:componentOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:componentOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'componentIs'">
 				<vra:hasComponent>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasComponent>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'copyAfter'">
 				<vra:copyOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:copyOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'copyIs'">
 				<vra:hasCopy>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasCopy>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'counterProofFor'">
 				<vra:counterProofFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:counterProofFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'counterProofIs'">
 				<vra:hasCounterProof>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasCounterProof>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'depicts'">
 				<vra:depicts>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:depicts>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'depictedIn'">
 				<vra:depictedIn>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:depictedIn>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'derivedFrom'">
 				<vra:derivedFrom>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:derivedFrom>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'sourceFor'">
 				<vra:sourceFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:sourceFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'designedFor'">
 				<vra:designedFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:designedFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'contextIs'">
 				<vra:hasContext>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasContext>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'exhibitedAt'">
 				<vra:exhibitedAt>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:exhibitedAt>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'venueFor'">
 				<vra:venueFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:venueFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'facsimileOf'">
 				<vra:facsimileOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:facsimileOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'facsimileIs'">
 				<vra:hasFacsimile>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasFacsimile>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'formerlyPartOf'">
 				<vra:formerlyPartOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:formerlyPartOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'formerlyLargerContextFor'">
 				<vra:formerlyLargerContextFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:formerlyLargerContextFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'mateOf'">
 				<vra:imageOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:imageOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'modelFor'">
 				<vra:imageOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:imageOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'modelIs'">
 				<vra:hasModel>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasModel>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'largerContextFor'">
 				<vra:largerContextFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:largerContextFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'partOf'">
 				<vra:partOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@relids}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:partOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'partnerInSetWith'">
 				<vra:partnerInSetWith>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:partnerInSetWith>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'pendantOf'">
 				<vra:pendantOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:pendantOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'planFor'">
 				<vra:planFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:planFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'planIs'">
 				<vra:hasPlan>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasPlan>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'prepatoryFor'">
 				<vra:prepatoryFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:prepatoryFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'basedOn'">
 				<vra:basedOn>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:basedOn>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'printingPlateFor'">
 				<vra:printingPlateFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:printingPlateFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'printingPlateIs'">
 				<vra:hasPrintingPlate>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasPrintingPlate>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'prototypeFor'">
 				<vra:prototypeFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:prototypeFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'prototypeIs'">
 				<vra:hasPrototype>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasPrototype>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'relatedTo'">
 				<vra:isRelatedTo>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:isRelatedTo>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'reliefFor'">
 				<vra:reliefFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:reliefFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'impressionIs'">
 				<vra:hasImpression>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasImpression>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'replicaOf'">
 				<vra:replicaOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:replicaOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'replicaIs'">
 				<vra:hasReplica>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasReplica>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'studyFor'">
 				<vra:studyFor>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:studyFor>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'studyIs'">
 				<vra:hasStudy>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasStudy>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'versionOf'">
 				<vra:versionOf>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:versionOf>
 			</xsl:if>
 			<xsl:if test="vc:relationSet/vc:relation/@type = 'versionIs'">
 				<vra:hasVersion>
 					<rdf:Description rdf:about="#{vc:relationSet/vc:relation/@refid}">
-						<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+						<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					</rdf:Description>
 				</vra:hasVersion>
 			</xsl:if>
@@ -2372,7 +2372,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:when test="not(vc:inscription/vc:author/node())">
 				<vra:hasInscription>
 					<rdf:Description>
-					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+					<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					<rdf:type rdf:resource="http://purl.org/vra/Inscription" />
 					<vra:description>
 						<xsl:value-of select="vc:display"/>
@@ -2391,7 +2391,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:when test="vc:author/@vocab = 'LCSAF' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
-					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+					<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					<rdf:type rdf:resource="http://purl.org/vra/Inscription" />
 					<vra:position>
 						<xsl:value-of select="vc:position"/>
@@ -2432,7 +2432,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:when test="@vocab = 'LCNAF' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
-					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+					<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					<rdf:type rdf:resource="http://purl.org/vra/Inscription" />
 					<vra:position>
 						<xsl:value-of select="vc:position"/>
@@ -2473,7 +2473,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:when test="@vocab = 'LCTGM' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
-					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+					<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					<rdf:type rdf:resource="http://purl.org/vra/Inscription" />
 					<vra:position>
 						<xsl:value-of select="vc:position"/>
@@ -2514,7 +2514,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:when test="@vocab = 'TGN' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
-					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+					<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					<rdf:type rdf:resource="http://purl.org/vra/Inscription" />
 					<vra:position>
 						<xsl:value-of select="vc:position"/>
@@ -2555,7 +2555,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:when test="@vocab = 'AAT' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
-					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+					<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					<rdf:type rdf:resource="http://purl.org/vra/Inscription" />
 					<vra:position>
 						<xsl:value-of select="vc:position"/>
@@ -2596,7 +2596,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:when test="@vocab = 'ULAN' and @refid">
 				<vra:hasInscription>
 				<rdf:Description>
-					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+					<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					<rdf:type rdf:resource="http://purl.org/vra/Inscription" />
 					<vra:position>
 						<xsl:value-of select="vc:position"/>
@@ -2637,7 +2637,7 @@ exclude-result-prefixes="vc xsl">
 			<xsl:otherwise>
 				<vra:hasInscription>
 				<rdf:Description>
-					<rdf:type rdf:resource="http://purl.org/vra/CreativeWork" />
+					<rdf:type rdf:resource="http://purl.org/vra/Work" />
 					<rdf:type rdf:resource="http://purl.org/vra/Inscription" />
 					<vra:position>
 						<xsl:value-of select="vc:position"/>
