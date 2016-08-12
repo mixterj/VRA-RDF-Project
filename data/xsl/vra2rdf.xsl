@@ -1273,7 +1273,6 @@ exclude-result-prefixes="vc xsl">
 	</xsl:template>
 	
 	<xsl:template match="vc:name" mode="vra:Place">
-		<vra:containedIn>
 			<rdf:Description>
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
@@ -1301,7 +1300,6 @@ exclude-result-prefixes="vc xsl">
 					<xsl:value-of select="."/>
 				</vra:name>	
 			</rdf:Description>
-		</vra:containedIn>
 	</xsl:template>
 	
 	<!-- Material template -->
