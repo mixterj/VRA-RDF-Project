@@ -1110,8 +1110,7 @@
 			</vra:serialNumber>
 		</xsl:if>
 		<vra:placeOfRepository>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1143,8 +1142,7 @@
 
 	<xsl:template match="vc:location[@type='publication']/vc:name">
 		<vra:placeOfPublication>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1176,8 +1174,7 @@
 
 	<xsl:template match="vc:location[@type='formerOwner']/vc:name">
 		<vra:formerOwner>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1209,8 +1206,7 @@
 
 	<xsl:template match="vc:location[@type='discovery']/vc:name">
 		<vra:placeOfDiscovery>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1242,8 +1238,7 @@
 
 	<xsl:template match="vc:location[@type='exhibition']/vc:name">
 		<vra:placeOfExhibition>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1275,8 +1270,7 @@
 
 	<xsl:template match="vc:location[@type='formerRepository']/vc:name">
 		<vra:formerRepository>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1308,8 +1302,7 @@
 
 	<xsl:template match="vc:location[@type='formerSite']/vc:name">
 		<vra:formerSite>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1341,8 +1334,7 @@
 
 	<xsl:template match="vc:location[@type='installation']/vc:name">
 		<vra:placeOfInstallation>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1374,8 +1366,7 @@
 
 	<xsl:template match="vc:location[@type='intended']/vc:name">
 		<vra:placeOfIntention>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1407,8 +1398,7 @@
 
 	<xsl:template match="vc:location[@type='owner']/vc:name">
 		<vra:placeOfOwnership>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1440,8 +1430,7 @@
 
 	<xsl:template match="vc:location[@type='performance']/vc:name">
 		<vra:placeOfPerformance>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
@@ -1473,8 +1462,7 @@
 
 	<xsl:template match="vc:location[@type='creation']/vc:name">
 		<vra:placeOfCreation>
-			<rdf:Description>
-				
+			<rdf:Description>				
 				<xsl:if test="@vocab='TGN' and @refid">
 					<xsl:attribute name="rdf:about">
 						<xsl:text>http://vocab.getty.edu/tgn/</xsl:text>
